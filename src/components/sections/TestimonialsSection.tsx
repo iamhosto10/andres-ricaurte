@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Testimonial } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
-import { Rocket, Verified } from "lucide-react";
+import { Rocket, User, Verified } from "lucide-react";
 
 const testimonials: Testimonial[] = [
   {
@@ -13,7 +13,7 @@ const testimonials: Testimonial[] = [
     name: "Daniela Vélez",
     role: "Ventas Hotel Vajamar - Valledupar",
     avatarUrl:
-      "https://lh3.googleusercontent.com/aida/ADBb0uhhM7Wv_X-XzL2-Y6-Gz_Z7Y_R8F-uB8P-Q-H-G-G-G",
+      "https://andresricaurte.com/wp-content/uploads/2025/09/Clientes-Web-Andres-Ricaurte-Daniela-Velez-1024x1024.png",
   },
   {
     quote:
@@ -89,19 +89,7 @@ function TestimonialCard({
       </p>
       <div className="flex items-center gap-4">
         <div className="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden relative flex items-center justify-center">
-          {testimonial.avatarUrl && !imgError ? (
-            <Image
-              src={testimonial.avatarUrl}
-              alt={testimonial.name}
-              fill
-              className="object-cover"
-              onError={() => setImgError(true)}
-            />
-          ) : (
-            <span className="material-symbols-outlined text-on-surface-variant text-2xl">
-              account_circle
-            </span>
-          )}
+          <User className="text-on-surface-variant text-2xl" />
         </div>
         <div>
           <span className="block font-bold text-on-surface">
