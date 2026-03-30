@@ -16,7 +16,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Andrés Ricaurte | Método CRACS",
-  description: "Consultor y mentor que combina automatización inteligente y humanización de marca",
+  description:
+    "Consultor y mentor que combina automatización inteligente y humanización de marca",
 };
 
 export default function RootLayout({
@@ -25,9 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
-      <head>
-      </head>
+    <html lang="es" className="dark" suppressHydrationWarning>
       <body
         className={`${plusJakartaSans.variable} ${inter.variable} antialiased`}
       >
