@@ -1,4 +1,5 @@
 import { Flame, BrainCircuit, Calendar } from "lucide-react";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 interface CourseCardProps {
   title: string;
@@ -6,12 +7,14 @@ interface CourseCardProps {
   badgeText: string;
   description: string;
   headerStyle: string;
+  delay?: number;
 }
 
-function CourseCard({ title, badgeIcon, badgeText, description, headerStyle }: CourseCardProps) {
+function CourseCard({ title, badgeIcon, badgeText, description, headerStyle, delay = 0 }: CourseCardProps) {
   return (
-    <div className="bg-white rounded-3xl overflow-hidden soft-shadow hover:-translate-y-2 transition-all border border-slate-100 flex flex-col h-full">
-      <div className={`h-56 flex items-center justify-center p-8 ${headerStyle}`}>
+    <FadeIn delay={delay} direction="up" className="h-full">
+      <div className="bg-white rounded-3xl overflow-hidden soft-shadow hover:-translate-y-2 transition-all border border-slate-100 flex flex-col h-full">
+        <div className={`h-56 flex items-center justify-center p-8 ${headerStyle}`}>
         <h3 className="text-3xl font-black text-white text-center leading-tight tracking-tight">
           {title}
         </h3>
@@ -26,11 +29,12 @@ function CourseCard({ title, badgeIcon, badgeText, description, headerStyle }: C
         <p className="text-slate-500 text-base mb-8 leading-relaxed flex-grow">
           {description}
         </p>
-        <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-slate-100 transition-colors tracking-tight mt-auto">
-          Ver Detalles
-        </button>
+          <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-slate-100 transition-colors tracking-tight mt-auto">
+            Ver Detalles
+          </button>
+        </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }
 
@@ -62,12 +66,14 @@ export default function CoursesSection() {
   return (
     <section className="py-24 bg-surface-container">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold mb-16 font-headline text-center tracking-tight">
-          Aprende a tu ritmo
-        </h2>
+        <FadeIn direction="up">
+          <h2 className="text-4xl font-extrabold mb-16 font-headline text-center tracking-tight">
+            Aprende a tu ritmo
+          </h2>
+        </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {courses.map((course, index) => (
-            <CourseCard key={index} {...course} />
+            <CourseCard key={index} {...course} delay={index * 0.2} />
           ))}
         </div>
       </div>

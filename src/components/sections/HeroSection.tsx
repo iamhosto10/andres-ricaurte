@@ -1,26 +1,34 @@
 import Image from "next/image";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 export default function HeroSection() {
   return (
     <header className="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-surface">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-7 z-10">
-          <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label">
-            Andrés Ricaurte | Estratega en Marketing y Ventas con IA
-          </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
-            Factura más con un sistema de <span className="text-primary">marketing y ventas</span> automatizadas.
-          </h1>
-          <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
-            Haz que tu negocio aparezca en ChatGPT, Google y redes sociales. Aplica el <strong>Método CRACS</strong> para dominar el mercado digital actual.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="primary-gradient text-on-primary text-xl font-bold px-10 py-5 rounded-xl shadow-soft-xl hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-[0.98]">
-              Quiero conocer más
-            </button>
-            <div className="flex items-center gap-3 px-4">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden relative">
+          <FadeIn delay={0.1}>
+            <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label">
+              Andrés Ricaurte | Estratega en Marketing y Ventas con IA
+            </span>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
+              Factura más con un sistema de <span className="text-primary">marketing y ventas</span> automatizadas.
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.3}>
+            <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
+              Haz que tu negocio aparezca en ChatGPT, Google y redes sociales. Aplica el <strong>Método CRACS</strong> para dominar el mercado digital actual.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.4}>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="primary-gradient text-on-primary text-xl font-bold px-10 py-5 rounded-xl shadow-soft-xl hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-[0.98]">
+                Quiero conocer más
+              </button>
+              <div className="flex items-center gap-3 px-4">
+                <div className="flex -space-x-2">
+                  <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden relative">
                   <Image
                     alt="User 1"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWGI-72ynLqsk0dNrAE8obP2mNJ8aXbO461lS2Zr0mGONf4exVwhHvGnQaxJ9qNXorkmDO-aA7DS90ckYK8ogQr_CVTyke2mlQ9Fm_VCozpHalG_5e_2tNjqjT_rIbZgCaB0Xp9VpAq6RkNa7XA89uRt-xUvV8husL1oKHDR00uMcAyIe1EXrkWPqBfIVAD6HU3PHNnmpbX4SWPbp1Feayv_zggSjhQtjSvJdeaUIXSYHhxL-vxNrTB6dQJbW7XqFQ8fU1V6_Eb5so"
@@ -37,11 +45,12 @@ export default function HeroSection() {
                   />
                 </div>
               </div>
-              <span className="text-sm font-semibold text-secondary tracking-tight">+500 Negocios impactados</span>
+                <span className="text-sm font-semibold text-secondary tracking-tight">+500 Negocios impactados</span>
+              </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
-        <div className="md:col-span-5 relative flex justify-center">
+        <FadeIn delay={0.5} direction="left" className="md:col-span-5 relative flex justify-center">
           <div className="relative w-full aspect-[4/5] max-w-md bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
             <Image
               alt="Andrés Ricaurte Profile"
@@ -53,7 +62,7 @@ export default function HeroSection() {
           </div>
           {/* Decorative element */}
           <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-        </div>
+        </FadeIn>
       </div>
     </header>
   );

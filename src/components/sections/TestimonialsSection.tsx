@@ -1,17 +1,20 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 interface TestimonialProps {
   quote: string;
   name: string;
   role: string;
   imageSrc: string;
+  delay?: number;
 }
 
-function TestimonialCard({ quote, name, role, imageSrc }: TestimonialProps) {
+function TestimonialCard({ quote, name, role, imageSrc, delay = 0 }: TestimonialProps) {
   return (
-    <div className="bg-white p-10 rounded-3xl soft-shadow border border-slate-100 flex flex-col h-full">
-      <div className="flex gap-1 mb-8">
+    <FadeIn delay={delay} direction="up" className="h-full">
+      <div className="bg-white p-10 rounded-3xl soft-shadow border border-slate-100 flex flex-col h-full">
+        <div className="flex gap-1 mb-8">
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="w-5 h-5 text-primary fill-primary" />
         ))}
@@ -28,9 +31,10 @@ function TestimonialCard({ quote, name, role, imageSrc }: TestimonialProps) {
           <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
             {role}
           </p>
+          </div>
         </div>
       </div>
-    </div>
+    </FadeIn>
   );
 }
 
@@ -65,12 +69,14 @@ export default function TestimonialsSection() {
   return (
     <section className="py-24 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center mb-16 font-headline tracking-tight">
-          Casos de Éxito Reales
-        </h2>
+        <FadeIn direction="up">
+          <h2 className="text-4xl font-extrabold text-center mb-16 font-headline tracking-tight">
+            Casos de Éxito Reales
+          </h2>
+        </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} {...testimonial} />
+            <TestimonialCard key={index} {...testimonial} delay={index * 0.2} />
           ))}
         </div>
       </div>
