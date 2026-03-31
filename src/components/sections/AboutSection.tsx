@@ -22,7 +22,7 @@ export default function AboutSection() {
           <FadeIn delay={0.1} direction="left">
             <h2 className="text-4xl font-extrabold text-on-surface mb-8 font-headline tracking-tight">
               ¿Quién está detrás del{" "}
-              <span className="text-primary">Método CRACS</span>?
+              <span className="text-primary">Método CRACS</span> ?
             </h2>
           </FadeIn>
           <FadeIn
