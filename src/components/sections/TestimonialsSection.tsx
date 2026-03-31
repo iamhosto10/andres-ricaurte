@@ -1,105 +1,79 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { Testimonial } from "@/types";
 import Image from "next/image";
-import { useState } from "react";
-import { Rocket, User, Verified } from "lucide-react";
+import { Star } from "lucide-react";
 
-const testimonials: Testimonial[] = [
-  {
-    quote:
-      '"Tiene una manera muy clara de enseñar lo que facilita la comprensión y aplicación inmediata de sus metodologías. Gracias a su efectividad, hemos logrado atraer más seguidores y posicionar mejor la empresa."',
-    name: "Daniela Vélez",
-    role: "Ventas Hotel Vajamar - Valledupar",
-    avatarUrl:
-      "https://andresricaurte.com/wp-content/uploads/2025/09/Clientes-Web-Andres-Ricaurte-Daniela-Velez-1024x1024.png",
-  },
-  {
-    quote:
-      '"Implementar el sistema de ventas con IA cambió las reglas del juego. Nuestro tiempo de respuesta bajó drásticamente y la conversión aumentó en un 32% en el primer trimestre."',
-    name: "Cliente Destacado",
-    role: "Sector Inmobiliario",
-  },
-];
+interface TestimonialProps {
+  quote: string;
+  name: string;
+  role: string;
+  imageSrc: string;
+}
+
+function TestimonialCard({ quote, name, role, imageSrc }: TestimonialProps) {
+  return (
+    <div className="bg-white p-10 rounded-3xl soft-shadow border border-slate-100 flex flex-col h-full">
+      <div className="flex gap-1 mb-8">
+        {[...Array(5)].map((_, i) => (
+          <Star key={i} className="w-5 h-5 text-primary fill-primary" />
+        ))}
+      </div>
+      <p className="text-on-surface mb-10 text-lg leading-relaxed italic flex-grow">
+        &quot;{quote}&quot;
+      </p>
+      <div className="flex items-center gap-4 mt-auto">
+        <div className="w-12 h-12 rounded-full overflow-hidden grayscale relative">
+          <Image alt={name} src={imageSrc} fill className="object-cover" />
+        </div>
+        <div>
+          <p className="font-bold text-sm tracking-tight">{name}</p>
+          <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
+            {role}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function TestimonialsSection() {
-  return (
-    <section className="py-24 bg-surface-container-lowest overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-4 block">
-              Descubre cómo algunos de mis clientes cuentan sus
-            </span>
-            <h2 className="font-headline text-4xl font-extrabold tracking-tight text-on-surface">
-              Experiencias de éxito
-            </h2>
-          </motion.div>
-          <motion.div
-            className="flex gap-8 items-center opacity-40"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <Verified className="text-primary text-4xl" />
-            <Rocket className="text-primary text-4xl" />
-          </motion.div>
-        </div>
+  const testimonials = [
+    {
+      quote:
+        "Implementar la IA en nuestra captación cambió las reglas del juego. Ahora los leads llegan filtrados y listos para comprar.",
+      name: "Yasmina Galeano",
+      role: "CEO Sector Inmobiliario",
+      imageSrc:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCOf6CejiE-609mfmLEIBqPVwir92mbQJYh9sQO04B-O1Xyanm9fvqYe4-xNnQpia835Zs6ufpVWIz09BDofjwhQxCfB4-GHrWviqVZcTBTYpsHHt9gIQ9M-mOSp6TVV_nlqRRQPQPYAcruOMc1I7SCHf5u1P1WsvzgluquzkQUBbaLLUzoO87itcrGNOMzbzl02o2JD1AzFw_QiXm2h0rFsGYS6m_fnQfuFlAzTJNXxNYvVp2UIn_DwPE_nTAobYzebLZxkSTXcTlc",
+    },
+    {
+      quote:
+        "Andrés no solo sabe de marketing, entiende de negocios. Su Método CRACS es la pieza que le faltaba a mi clínica.",
+      name: "Dr. Davidson Osorio",
+      role: "Especialista Médico",
+      imageSrc:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuAPUo9wLBC8DB1VSlKJwUpuJWEu9tffOZYvR4lkUNdbedON4pucz1yLxKXVRRpU1VXVrlmwPiXD4zLNV6btFVXMosnsgodnHgjQuOZiH9tQRbNeUFuoZORXhwbclAQwTgkjY27n2K_IH5Rt2zNawGMF4gvcaFkei38hdAmCi4LONlRkHLDVthx98r_0HCCs6VLAasTFXn4JTuiabNFaw1H_dlknic5kYoWBxbhc6KLZBMDjz_ucnLn1xYvt3l26EYrxrGRyxK8twB-b",
+    },
+    {
+      quote:
+        "El posicionamiento en ChatGPT nos trajo clientes internacionales que antes ni nos veían. Totalmente recomendado.",
+      name: "Silvia Lopera",
+      role: "Fundadora Tech Startup",
+      imageSrc:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuA2PSyiIOgYeosGRAS9Hj4CkFkq4LRAmWXtJEdzhLQ2uvgizPSWa2lUCBbtPKdUOgvFO_dgfLlmznnGPqvzm7HQ2Efq8TNvyqbyUuUKoirQCelmilQLAbpNsDba-7qY51ai9PdRPJcp3vjD1myQ3bxR6bwXQcKlkZZJpeuU0HKbP0-Ks2Q8ezVXsSSqf37y4AABuRlUlj_qHbnI95L_rF8xYnwVfHxFTwsKkEJ5TxGHfWncd-Tdeye8KWs-1mMGuUkRx-YyHqCyGf0O",
+    },
+  ];
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+  return (
+    <section className="py-24 bg-surface">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-4xl font-extrabold text-center mb-16 font-headline tracking-tight">
+          Casos de Éxito Reales
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              testimonial={testimonial}
-              index={index}
-            />
+            <TestimonialCard key={index} {...testimonial} />
           ))}
         </div>
       </div>
     </section>
-  );
-}
-
-function TestimonialCard({
-  testimonial,
-  index,
-}: {
-  testimonial: Testimonial;
-  index: number;
-}) {
-  const [imgError, setImgError] = useState(false);
-
-  return (
-    <motion.div
-      className="space-y-6 p-10 rounded-xl bg-surface-container border border-outline-variant/10"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: index * 0.2 }}
-    >
-      <p className="font-body text-xl italic text-on-surface leading-relaxed">
-        {testimonial.quote}
-      </p>
-      <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden relative flex items-center justify-center">
-          <User className="text-on-surface-variant text-2xl" />
-        </div>
-        <div>
-          <span className="block font-bold text-on-surface">
-            {testimonial.name}
-          </span>
-          <span className="text-xs text-on-surface-variant uppercase tracking-widest">
-            {testimonial.role}
-          </span>
-        </div>
-      </div>
-    </motion.div>
   );
 }

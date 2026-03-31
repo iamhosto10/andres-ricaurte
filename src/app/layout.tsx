@@ -1,23 +1,28 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "Andrés Ricaurte | Método CRACS",
+  title: "Andrés Ricaurte | Estratega en Marketing y Ventas con IA",
   description:
-    "Consultor y mentor que combina automatización inteligente y humanización de marca",
+    "Haz que tu negocio aparezca en ChatGPT, Google y redes sociales. Aplica el Método CRACS para dominar el mercado digital actual.",
+  openGraph: {
+    title: "Andrés Ricaurte | Estratega en Marketing y Ventas con IA",
+    description: "Haz que tu negocio aparezca en ChatGPT, Google y redes sociales. Aplica el Método CRACS para dominar el mercado digital actual.",
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Andrés Ricaurte | Estratega en Marketing y Ventas con IA",
+    description: "Haz que tu negocio aparezca en ChatGPT, Google y redes sociales. Aplica el Método CRACS para dominar el mercado digital actual.",
+  },
 };
 
 export default function RootLayout({
@@ -26,9 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark" suppressHydrationWarning>
+    <html lang="es" className="light" suppressHydrationWarning>
       <body
-        className={`${plusJakartaSans.variable} ${inter.variable} antialiased`}
+        className={`${inter.variable} bg-surface font-body text-on-surface antialiased`}
       >
         {children}
       </body>
