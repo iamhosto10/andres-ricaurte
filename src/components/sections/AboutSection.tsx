@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="order-2 md:order-1">
           <FadeIn
             direction="right"
-            className="relative rounded-3xl overflow-hidden soft-shadow h-[550px] border border-slate-100"
+            className="relative rounded-3xl overflow-hidden soft-shadow w-full aspect-auto border border-slate-100"
           >
             <img
               alt="Andrés speaking on stage"
