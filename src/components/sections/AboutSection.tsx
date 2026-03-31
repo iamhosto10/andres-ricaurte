@@ -64,7 +64,7 @@ export default function AboutSection() {
               </div>
               <div>
                 <p className="font-bold text-on-surface text-lg">
-                  Estrategia Validada
+                  Estrategia Validada.
                 </p>
                 <p className="text-sm text-slate-500 font-medium tracking-tight">
                   Más de 10 años en el ecosistema digital.
