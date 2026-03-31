@@ -38,7 +38,7 @@ export default function HeroSection() {
             entre otros.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="bg-primary-container text-on-primary-container px-8 py-4 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10">
+            <button className="primary-gradient text-on-primary-container px-8 py-4 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10">
               Quiero conocer más
             </button>
           </div>
