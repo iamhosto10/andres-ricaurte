@@ -28,13 +28,17 @@ export default function HeroSection() {
             </span>
           </div>
           <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-on-surface">
-            Factura más con un sistema de <span className="text-primary">marketing y ventas automatizadas</span>
+            Factura más con un sistema de{" "}
+            <span className="text-primary">
+              marketing y ventas automatizadas
+            </span>
           </h1>
           <p className="font-body text-xl text-on-surface-variant max-w-lg leading-relaxed">
-            Haz que tu negocio aparezca en ChatGPT, Google, Copilot, Claude, entre otros.
+            Haz que tu negocio aparezca en ChatGPT, Google, Copilot, Claude,
+            entre otros.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="primary-gradient text-on-primary-container px-8 py-4 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10">
+            <button className="bg-primary-container text-on-primary-container px-8 py-4 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10">
               Quiero conocer más
             </button>
           </div>

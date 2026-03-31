@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
 @import "tailwindcss";
 
-:root {
+/* :root {
   --color-surface-container: #1f1f1f;
   --color-surface-dim: #131313;
   --color-on-primary: #003825;
@@ -49,6 +49,56 @@
   --color-error: #ffb4ab;
   --color-secondary-container: #a90212;
   --color-on-tertiary: #303030;
+} */
+
+:root {
+  --color-surface-container: #211f1f;
+  --color-surface-dim: #141313;
+  --color-on-primary: #680006;
+  --color-tertiary: #c9c78b;
+  --color-surface-tint: #ffb4a9;
+  --color-on-background: #e3e2e2;
+  --color-background: #141313;
+  --color-on-primary-fixed: #410002;
+  --color-surface: #141313;
+  --color-secondary-fixed-dim: #e7bdb6;
+  --color-on-secondary-fixed-variant: #5d3f3b;
+  --color-outline-variant: #534341;
+  --color-on-tertiary-container: #e6e3a5;
+  --color-surface-variant: #534341;
+  --color-on-primary-fixed-variant: #93000b;
+  --color-secondary-fixed: #ffdad4;
+  --color-on-secondary: #442925;
+  --color-surface-container-highest: #353434;
+  --color-on-primary-container: #ffdad4;
+  --color-surface-bright: #3a3939;
+  --color-on-error-container: #ffdad6;
+  --color-on-error: #690005;
+  --color-on-tertiary-fixed-variant: #4a481b;
+  --color-on-tertiary-fixed: #1d1d00;
+  --color-outline: #a08c8a;
+  --color-tertiary-fixed-dim: #c9c78b;
+  --color-primary: #ffb4a9;
+  --color-inverse-surface: #e3e2e2;
+  --color-primary-fixed: #ffdad4;
+  --color-secondary: #e7bdb6;
+  --color-on-surface-variant: #d8c2bf;
+  --color-primary-fixed-dim: #ffb4a9;
+  --color-surface-container-lowest: #0f0e0e;
+  --color-on-secondary-fixed: #2d1511;
+  --color-tertiary-fixed: #e6e3a5;
+  --color-surface-container-high: #2a2929;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-secondary-container: #ffdad4;
+  --color-primary-container: #93000b;
+  --color-inverse-primary: #c00012;
+  --color-on-surface: #e3e2e2;
+  --color-inverse-on-surface: #303030;
+  --color-tertiary-container: #4a481b;
+  --color-error-container: #93000a;
+  --color-error: #ffb4ab;
+  --color-secondary-container: #5d3f3b;
+  --color-on-tertiary: #323106;
 }
 
 @theme {
@@ -112,7 +162,11 @@ body {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 .glass-effect {

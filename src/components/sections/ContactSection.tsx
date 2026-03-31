@@ -15,7 +15,7 @@ export default function ContactSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <div className="lg:col-span-2 primary-gradient p-12 flex flex-col justify-center">
+          <div className="lg:col-span-2 bg-primary-container p-12 flex flex-col justify-center">
             <h2 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tight text-on-primary-container mb-6">
               Implementemos un Sistema de ventas que te haga destacar.
             </h2>
@@ -90,7 +90,7 @@ export default function ContactSection() {
               </div>
               <div className="pt-4">
                 <button
-                  className="w-full primary-gradient text-on-primary-container px-8 py-5 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10"
+                  className="w-full bg-primary-container text-on-primary-container px-8 py-5 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10"
                   type="submit"
                 >
                   Contactar Ahora
