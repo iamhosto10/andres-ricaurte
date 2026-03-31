@@ -11,18 +11,41 @@ export default function SocialProofSection() {
           </p>
         </FadeIn>
         <div className="flex flex-col gap-12 items-center">
-          <FadeIn delay={0.2} direction="up" className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-30 grayscale contrast-125 transition-opacity hover:opacity-100">
-            <span className="text-2xl font-black text-on-surface">Eurosalud</span>
-            <span className="text-2xl font-black text-on-surface tracking-tighter">SALVATOR</span>
-            <span className="text-2xl font-black text-on-surface italic">Terranova</span>
-            <span className="text-2xl font-black text-on-surface uppercase tracking-widest">URBANIA</span>
+          <FadeIn
+            delay={0.2}
+            direction="up"
+            className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-30 contrast-125 transition-opacity hover:opacity-100"
+          >
+            <img
+              src="https://andresricaurte.com/wp-content/uploads/2025/09/Alianzas-y-colaboraciones-Andres-Ricaurte-Consultor-Marketing-IA-8.png"
+              alt=""
+              className="h-12 lg:h-20 object-contain"
+            />
+            <img
+              src="https://andresricaurte.com/wp-content/uploads/2025/09/Alianzas-y-colaboraciones-Andres-Ricaurte-Consultor-Marketing-IA-7.png"
+              alt=""
+              className="h-12 lg:h-20 object-contain"
+            />
+            <img
+              src="https://andresricaurte.com/wp-content/uploads/2025/09/Alianzas-y-colaboraciones-Andres-Ricaurte-Consultor-Marketing-IA-6.png"
+              alt=""
+              className="h-12 lg:h-20 object-contain"
+            />
+            <img
+              src="https://andresricaurte.com/wp-content/uploads/2025/09/Alianzas-y-colaboraciones-Andres-Ricaurte-Consultor-Marketing-IA-5.png"
+              alt=""
+              className="h-12 lg:h-20 object-contain"
+            />
           </FadeIn>
-          <FadeIn delay={0.3} direction="up" className="max-w-4xl mx-auto w-full h-64 rounded-2xl overflow-hidden grayscale opacity-40 hover:opacity-80 transition-all soft-shadow relative">
-            <Image
+          <FadeIn
+            delay={0.3}
+            direction="up"
+            className="max-w-4xl mx-auto w-full aspect-video rounded-2xl overflow-hidden transition-all soft-shadow relative"
+          >
+            <img
               alt="Team"
               className="object-cover"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ugz4elHzG2eX7YsXZoCId6NufBdn6gjbFvXGpkMAjnUkqr3mVrZhO9Iv4FKrEVo4Rof043p2DHjQbjR3RX8TE1tF9jfI-BVOxDxjtGuxR7gBsV2ipIC3pz2kIJ3uaxBkjdlLcWMjGz5TmOqt9fDrdKRZdgy4iBiLzUJ150wLur21PYaCZ0Tfgc2Iz5NzzlHRIBZtjrhOIO8hJFLCkPxij9ateNbbQRGE7X-fJU8qCNjaM1u7k7amZZO7LsE-z6W2_7m3fdCrBfinQ"
-              fill
+              src="https://andresricaurte.com/wp-content/uploads/2025/09/Fondos-para-web_20250920_150953_0000.png"
             />
           </FadeIn>
         </div>

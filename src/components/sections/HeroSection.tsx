@@ -13,12 +13,16 @@ export default function HeroSection() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
-              Factura más con un sistema de <span className="text-primary">marketing y ventas</span> automatizadas.
+              Factura más con un sistema de{" "}
+              <span className="text-primary">marketing y ventas</span>{" "}
+              automatizadas.
             </h1>
           </FadeIn>
           <FadeIn delay={0.3}>
             <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
-              Haz que tu negocio aparezca en ChatGPT, Google y redes sociales. Aplica el <strong>Método CRACS</strong> para dominar el mercado digital actual.
+              Haz que tu negocio aparezca en ChatGPT, Google y redes sociales.
+              Aplica el <strong>Método CRACS</strong> para dominar el mercado
+              digital actual.
             </p>
           </FadeIn>
           <FadeIn delay={0.4}>
@@ -29,35 +33,39 @@ export default function HeroSection() {
               <div className="flex items-center gap-3 px-4">
                 <div className="flex -space-x-2">
                   <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden relative">
-                  <Image
-                    alt="User 1"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWGI-72ynLqsk0dNrAE8obP2mNJ8aXbO461lS2Zr0mGONf4exVwhHvGnQaxJ9qNXorkmDO-aA7DS90ckYK8ogQr_CVTyke2mlQ9Fm_VCozpHalG_5e_2tNjqjT_rIbZgCaB0Xp9VpAq6RkNa7XA89uRt-xUvV8husL1oKHDR00uMcAyIe1EXrkWPqBfIVAD6HU3PHNnmpbX4SWPbp1Feayv_zggSjhQtjSvJdeaUIXSYHhxL-vxNrTB6dQJbW7XqFQ8fU1V6_Eb5so"
-                    fill
-                    className="object-cover"
-                  />
+                    <Image
+                      alt="User 1"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWGI-72ynLqsk0dNrAE8obP2mNJ8aXbO461lS2Zr0mGONf4exVwhHvGnQaxJ9qNXorkmDO-aA7DS90ckYK8ogQr_CVTyke2mlQ9Fm_VCozpHalG_5e_2tNjqjT_rIbZgCaB0Xp9VpAq6RkNa7XA89uRt-xUvV8husL1oKHDR00uMcAyIe1EXrkWPqBfIVAD6HU3PHNnmpbX4SWPbp1Feayv_zggSjhQtjSvJdeaUIXSYHhxL-vxNrTB6dQJbW7XqFQ8fU1V6_Eb5so"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden relative">
+                    <Image
+                      alt="User 2"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXNhRnWqWqekTf9Uuwz6Xea1zjlYcUx5o1LwA81agFEsYWM6oICkcWG3kBOt9_cE2YDEoE5AuNOw6Fw4xY9qAyyHVQdUyo9zk-_z6RfFS-bLFsDp_l6sR6kleXN3e2fFdyzTXKTkYRXQMFXSzJ6EtFXGIdiVPj--HzejoVMEW7mDEgJTUPlNhA1mjee5BQF7dUUam2iRBwuSpePzxzCP4tZ_eMjt-HPTBR7wGlBLynoWptgpsORBNBvWumgCm3zQMWOVgpbCkJCMp5"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden relative">
-                  <Image
-                    alt="User 2"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXNhRnWqWqekTf9Uuwz6Xea1zjlYcUx5o1LwA81agFEsYWM6oICkcWG3kBOt9_cE2YDEoE5AuNOw6Fw4xY9qAyyHVQdUyo9zk-_z6RfFS-bLFsDp_l6sR6kleXN3e2fFdyzTXKTkYRXQMFXSzJ6EtFXGIdiVPj--HzejoVMEW7mDEgJTUPlNhA1mjee5BQF7dUUam2iRBwuSpePzxzCP4tZ_eMjt-HPTBR7wGlBLynoWptgpsORBNBvWumgCm3zQMWOVgpbCkJCMp5"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-                <span className="text-sm font-semibold text-secondary tracking-tight">+500 Negocios impactados</span>
+                <span className="text-sm font-semibold text-secondary tracking-tight">
+                  +500 Negocios impactados
+                </span>
               </div>
             </div>
           </FadeIn>
         </div>
-        <FadeIn delay={0.5} direction="left" className="md:col-span-5 relative flex justify-center">
+        <FadeIn
+          delay={0.5}
+          direction="left"
+          className="md:col-span-5 relative flex justify-center"
+        >
           <div className="relative w-full aspect-[4/5] max-w-md bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
-            <Image
+            <img
               alt="Andrés Ricaurte Profile"
               className="object-cover object-top"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ugOoUGMSwLzdThsIEeUFGoBiXLj3cv-g4VfFbSYc0XhLRh4B56n_kzDw6CVwoYwGmxki28RZ7EF0ZKTQO2_xvStpPa04e51DnnQS2M2AENREe0QHNCjLAWcqvYgo522gKTPAJqeOJ8QhRLWQmt33RRILuaWx11xmZQGE9FpbjnkUlp5FTvWSVzLP4T1vXEtl2nkXajS4qCd5NWY41AmN3zxg9-yKffI-ORv1FrG8rainXQQFf3HxrvUnUPH0DNJtdSiFhACjf5ofGA"
-              fill
-              priority
+              src="https://andresricaurte.com/wp-content/uploads/2025/09/Andres-Alfonso-Ricaurte-Consultor-estratega-de-marketing-IA-LLM-AIO-AEO-SEG-SEO-GEO-ventas-VALLEDUPAR-MENTOR-NEGOCIOS-1.png"
             />
           </div>
           {/* Decorative element */}
