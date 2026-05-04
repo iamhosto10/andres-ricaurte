@@ -20,13 +20,14 @@ export default function ContactSection() {
               Trabajemos juntos
             </h2>
             <p className="text-slate-400 text-xl max-w-md leading-relaxed">
-              Es momento de llevar tu negocio al futuro. Agendemos una sesión estratégica hoy mismo.
+              Es momento de llevar tu negocio al futuro. Agendemos una sesión
+              estratégica hoy mismo.
             </p>
           </div>
 
           <div className="relative z-10 w-full md:w-auto">
             <button className="w-full md:w-auto bg-primary text-white text-2xl font-black px-16 py-8 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(255,1,1,0.3)] border-b-4 border-red-800">
-              CONTACT US
+              CONTACTAME
             </button>
           </div>
         </motion.div>

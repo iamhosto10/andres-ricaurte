@@ -11,7 +11,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-on-background selection:bg-primary selection:text-on-primary">
       <HeroSection />
-      <SocialProofSection />
+      <TestimonialsSection />
+      {/* <SocialProofSection /> */}
       <MethodSection />
       <ServicesSection />
       <StepsSection />
