@@ -19,7 +19,7 @@ export default function MethodSection() {
               alt="Andrés speaking on stage"
               fill
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ujhqsrQLgSlUx-6F8l_tqUY6lqZtrCfyw7HUXF-Vpxv7VMVbXu2BcuW1sg7i8UY3o4nZDDH1D0G7eJhkxIP191A260pvc3H6h52zguhnyaVnbBMXfILIAuNk-2951L0B5mi1G6xSpiHeGyW-3dy8Wr2KFjdIB1Rft1tO3S_C6DoW8EB4IgPpExnIN3a0-a_2nkANHoArCZ8IpdcSrkrahyREiXRDTOz9CFSg12NVK9CC78s2rgMJiDKId04VIivnRyKXu-NgUhU4A"
+              src={"/Andres%20Ricaurte.webp"}
             />
           </div>
         </motion.div>
