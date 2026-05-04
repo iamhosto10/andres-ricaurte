@@ -1,4 +1,5 @@
 import HeroSection from "@/components/sections/HeroSection";
+import SocialProofSection from "@/components/sections/SocialProofSection";
 import MethodSection from "@/components/sections/MethodSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import StepsSection from "@/components/sections/StepsSection";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-on-background selection:bg-primary selection:text-on-primary">
       <HeroSection />
+      <SocialProofSection />
       <MethodSection />
       <ServicesSection />
       <StepsSection />

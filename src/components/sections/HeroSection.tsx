@@ -5,45 +5,75 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
-          alt="Fondo Estrategia"
-          fill
-          className="w-full h-full object-cover opacity-20"
-          src="https://lh3.googleusercontent.com/aida/ADBb0uimRO8jVrif0xzsB_9uB5yelOL5VkiOXahCpV31mZM6ivjFmtoGCCP3-DHxT3uIMG9fgfNvHYHsqsDQm4_uT-jqUvYlQ6Obz1SAZfYWCDGAndpu9Z99ouDpW_1bco4ufmEY8UpqGy9Pby27_TAK8cm_5x0HDGluK60h0LXrTXOS9WGTQDiSuDBoPxgCngNCUTHnjToDkjjKU-i0z89TC1wBqbb3M0_I3x15-ePKgoNVsmdrYPAiBzgeKhPdnS11W8ePy96EwSqa"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
-      </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <header className="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-surface">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <motion.div
-          className="space-y-8"
+          className="md:col-span-7 z-10"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-block px-3 py-1 bg-surface-container-high border border-outline-variant/20 rounded-full">
-            <span className="text-[10px] uppercase tracking-[0.1em] font-bold text-primary">
-              Sistemas de Crecimiento Automatizado
-            </span>
-          </div>
-          <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight text-on-surface">
+          <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label">
+            Andrés Ricaurte | Estratega en Marketing y Ventas con IA
+          </span>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
             Factura más con un sistema de{" "}
-            <span className="text-primary">
-              marketing y ventas automatizadas
-            </span>
+            <span className="text-primary">marketing y ventas</span>{" "}
+            automatizadas.
           </h1>
-          <p className="font-body text-xl text-on-surface-variant max-w-lg leading-relaxed">
-            Haz que tu negocio aparezca en ChatGPT, Google, Copilot, Claude,
-            entre otros.
+          <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
+            Haz que tu negocio aparezca en ChatGPT, Google y redes sociales.
+            Aplica el <strong>Método CRACS</strong> para dominar el mercado digital
+            actual.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="primary-gradient text-on-primary-container px-8 py-4 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="primary-gradient text-on-primary text-xl font-bold px-10 py-5 rounded-xl shadow-soft-xl hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-[0.98]">
               Quiero conocer más
             </button>
+            <div className="flex items-center gap-3 px-4">
+              <div className="flex -space-x-2">
+                <div className="relative w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden">
+                  <Image
+                    alt="User 1"
+                    fill
+                    className="object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWGI-72ynLqsk0dNrAE8obP2mNJ8aXbO461lS2Zr0mGONf4exVwhHvGnQaxJ9qNXorkmDO-aA7DS90ckYK8ogQr_CVTyke2mlQ9Fm_VCozpHalG_5e_2tNjqjT_rIbZgCaB0Xp9VpAq6RkNa7XA89uRt-xUvV8husL1oKHDR00uMcAyIe1EXrkWPqBfIVAD6HU3PHNnmpbX4SWPbp1Feayv_zggSjhQtjSvJdeaUIXSYHhxL-vxNrTB6dQJbW7XqFQ8fU1V6_Eb5so"
+                  />
+                </div>
+                <div className="relative w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden">
+                  <Image
+                    alt="User 2"
+                    fill
+                    className="object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXNhRnWqWqekTf9Uuwz6Xea1zjlYcUx5o1LwA81agFEsYWM6oICkcWG3kBOt9_cE2YDEoE5AuNOw6Fw4xY9qAyyHVQdUyo9zk-_z6RfFS-bLFsDp_l6sR6kleXN3e2fFdyzTXKTkYRXQMFXSzJ6EtFXGIdiVPj--HzejoVMEW7mDEgJTUPlNhA1mjee5BQF7dUUam2iRBwuSpePzxzCP4tZ_eMjt-HPTBR7wGlBLynoWptgpsORBNBvWumgCm3zQMWOVgpbCkJCMp5"
+                  />
+                </div>
+              </div>
+              <span className="text-sm font-semibold text-secondary tracking-tight">
+                +500 Negocios impactados
+              </span>
+            </div>
           </div>
         </motion.div>
+
+        <motion.div
+          className="md:col-span-5 relative flex justify-center"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        >
+          <div className="relative w-full aspect-[4/5] max-w-md bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
+            <Image
+              alt="Andrés Ricaurte Profile"
+              fill
+              className="w-full h-full object-cover object-top"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ugOoUGMSwLzdThsIEeUFGoBiXLj3cv-g4VfFbSYc0XhLRh4B56n_kzDw6CVwoYwGmxki28RZ7EF0ZKTQO2_xvStpPa04e51DnnQS2M2AENREe0QHNCjLAWcqvYgo522gKTPAJqeOJ8QhRLWQmt33RRILuaWx11xmZQGE9FpbjnkUlp5FTvWSVzLP4T1vXEtl2nkXajS4qCd5NWY41AmN3zxg9-yKffI-ORv1FrG8rainXQQFf3HxrvUnUPH0DNJtdSiFhACjf5ofGA"
+            />
+          </div>
+          {/* Decorative element */}
+          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+        </motion.div>
       </div>
-    </section>
+    </header>
   );
 }

@@ -5,59 +5,55 @@ import Image from "next/image";
 
 export default function MethodSection() {
   return (
-    <section className="py-24 bg-surface-container-low overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="py-24 bg-surface">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <motion.div
-          className="relative group"
+          className="order-2 md:order-1"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <div className="absolute -inset-4 bg-primary/10 blur-2xl rounded-full opacity-50 group-hover:opacity-75 transition duration-1000"></div>
-          <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-outline-variant/15 bg-surface-container-high">
+          <div className="relative rounded-3xl overflow-hidden soft-shadow h-[550px] border border-slate-100">
             <Image
-              alt="Andrés Ricaurte Retrato"
+              alt="Andrés speaking on stage"
               fill
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ugjYQNI0f3cXXPWSP6YAMvSkx7ARQlDXSr8mB9taBbxZndO3P5VJBPe31Wou1L93_5bPbcNy5T7bKXEefURrJR_tYia012vEmInXOG7ztjuXPAmacoCbGOApmEK13tqgKiRWBzhK6p6gU0kmqJlV6odPV0ZZ5IhKIZBcz9QHCRZmf8qcar-miIREDTCsQLf2OKVTtSFTpyjbQQeJTCbrjM8-cOFpClHOmRxIhDbL5U0hECvyB2z-Egc76ENrDTUpDVePpYT5oSa-w"
+              className="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ujhqsrQLgSlUx-6F8l_tqUY6lqZtrCfyw7HUXF-Vpxv7VMVbXu2BcuW1sg7i8UY3o4nZDDH1D0G7eJhkxIP191A260pvc3H6h52zguhnyaVnbBMXfILIAuNk-2951L0B5mi1G6xSpiHeGyW-3dy8Wr2KFjdIB1Rft1tO3S_C6DoW8EB4IgPpExnIN3a0-a_2nkANHoArCZ8IpdcSrkrahyREiXRDTOz9CFSg12NVK9CC78s2rgMJiDKId04VIivnRyKXu-NgUhU4A"
             />
-          </div>
-          <div className="absolute bottom-6 right-6 bg-surface-container-highest p-6 rounded-lg border border-outline-variant/20 shadow-2xl max-w-xs glass-effect">
-            <p className="font-headline font-bold text-primary text-2xl mb-1">Método CRACS</p>
-            <p className="font-label text-xs uppercase tracking-widest text-on-surface-variant">Vende más, ahorra tiempo y convierte clientes</p>
           </div>
         </motion.div>
 
         <motion.div
-          className="space-y-8"
+          className="order-1 md:order-2"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-4 block">
-            ¿Quién está detrás del Método CRACS?
-          </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface">
-            Consultor y mentor que combina automatización inteligente y humanización de marca
+          <h2 className="text-4xl font-extrabold text-on-surface mb-8 font-headline tracking-tight">
+            ¿Quién está detrás del <span className="text-primary">Método CRACS</span>?
           </h2>
-          <div className="space-y-6 font-body text-lg text-on-surface-variant leading-relaxed">
+          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
             <p>
-              Entiendo el mayor reto de los empresarios: falta de clientes, procesos manuales y poco tiempo para crecer. Por eso creé sistemas de ventas sostenibles que trabajan por ti.
+              Hola, soy <strong>Andrés Alfonso Ricaurte</strong>. Mi misión es transformar la forma en que las empresas conectan con sus clientes en la era de la Inteligencia Artificial.
             </p>
             <p>
-              A través del <span className="text-on-surface font-semibold">Método CRACS</span>, posicionamos tu negocio como referente y logramos que seas la opción preferida en tu sector.
+              He visto a cientos de empresarios frustrados por invertir en publicidad que no retorna, o por procesos manuales que consumen su tiempo y el de sus equipos. Por eso diseñé un sistema que automatiza lo tedioso y potencia lo humano.
+            </p>
+            <p>
+              A través del Método CRACS, no solo vendes más; construyes una reputación digital imbatible que te posiciona como el líder de tu industria.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
-            <div className="p-4 bg-surface-container-lowest border-l-2 border-primary">
-              <span className="block font-headline font-bold text-on-surface">Automatización IA</span>
-              <span className="text-sm text-on-surface-variant">Tecnología de punta para escalar.</span>
-            </div>
-            <div className="p-4 bg-surface-container-lowest border-l-2 border-primary">
-              <span className="block font-headline font-bold text-on-surface">Humanización</span>
-              <span className="text-sm text-on-surface-variant">Conexiones reales con clientes.</span>
+          <div className="mt-10 pt-10 border-t border-slate-100">
+            <div className="flex items-center gap-6">
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                <span className="material-symbols-outlined text-3xl font-bold">verified_user</span>
+              </div>
+              <div>
+                <p className="font-bold text-on-surface text-lg">Estrategia Validada</p>
+                <p className="text-sm text-slate-500 font-medium tracking-tight">Más de 10 años en el ecosistema digital.</p>
+              </div>
             </div>
           </div>
         </motion.div>

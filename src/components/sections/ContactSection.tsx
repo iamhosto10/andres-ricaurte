@@ -1,105 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-primary-container/10"></div>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    <section className="py-24 bg-surface">
+      <div className="max-w-7xl mx-auto px-6">
         <motion.div
-          className="bg-surface-container-high rounded-2xl border border-primary/20 overflow-hidden grid grid-cols-1 lg:grid-cols-5 shadow-2xl"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="bg-slate-950 rounded-[2.5rem] p-12 md:p-24 flex flex-col md:flex-row items-center justify-between gap-16 text-center md:text-left shadow-soft-xl relative overflow-hidden"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
         >
-          <div className="lg:col-span-2 primary-gradient p-12 flex flex-col justify-center">
-            <h2 className="font-headline text-3xl md:text-4xl font-extrabold tracking-tight text-on-primary-container mb-6">
-              Implementemos un Sistema de ventas que te haga destacar.
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+
+          <div className="relative z-10">
+            <h2 className="text-4xl md:text-6xl font-black text-white mb-6 font-headline tracking-tighter">
+              Trabajemos juntos
             </h2>
-            <p className="text-on-primary-container/80 mb-8 font-body leading-relaxed text-lg">
-              Hablemos de Oportunidades. Trabajemos juntos para escalar tu
-              facturación con IA.
+            <p className="text-slate-400 text-xl max-w-md leading-relaxed">
+              Es momento de llevar tu negocio al futuro. Agendemos una sesión estratégica hoy mismo.
             </p>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-on-primary-container font-semibold">
-                <CheckCircle2 className="text-primary-fixed text-3xl" />
-                Diagnóstico de Ventas IA
-              </li>
-              <li className="flex items-center gap-3 text-on-primary-container font-semibold">
-                <CheckCircle2 className="text-primary-fixed text-3xl" />
-                Estrategia de Posicionamiento
-              </li>
-            </ul>
           </div>
-          <div className="lg:col-span-3 p-12 bg-surface-container-highest">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label
-                    htmlFor="name"
-                    className="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
-                  >
-                    Nombre Completo
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    className="w-full bg-surface-container border-none focus:ring-0 border-b border-outline-variant/30 focus:border-primary transition-all p-4 text-on-surface rounded-none outline-none"
-                    placeholder="Tu nombre"
-                    type="text"
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label
-                    htmlFor="email"
-                    className="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
-                  >
-                    Correo Electrónico
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    className="w-full bg-surface-container border-none focus:ring-0 border-b border-outline-variant/30 focus:border-primary transition-all p-4 text-on-surface rounded-none outline-none"
-                    placeholder="email@empresa.com"
-                    type="email"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label
-                  htmlFor="industry"
-                  className="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold ml-1"
-                >
-                  Tipo de Negocio / Industria
-                </label>
-                <select
-                  id="industry"
-                  name="industry"
-                  className="w-full bg-surface-container border-none focus:ring-0 border-b border-outline-variant/30 focus:border-primary transition-all p-4 text-on-surface rounded-none appearance-none outline-none"
-                >
-                  <option>Servicios / Consultoría</option>
-                  <option>E-commerce / Retail</option>
-                  <option>Inmobiliaria</option>
-                  <option>Otro</option>
-                </select>
-              </div>
-              <div className="pt-4">
-                <button
-                  className="w-full primary-gradient text-on-primary-container px-8 py-5 rounded-md font-headline font-bold text-lg hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary/10"
-                  type="submit"
-                >
-                  Contactar Ahora
-                </button>
-              </div>
-              <p className="text-center text-xs text-on-surface-variant">
-                Disponibilidad limitada para ciclos de consultoría mensual.
-              </p>
-            </form>
+
+          <div className="relative z-10 w-full md:w-auto">
+            <button className="w-full md:w-auto bg-primary text-white text-2xl font-black px-16 py-8 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(255,1,1,0.3)] border-b-4 border-red-800">
+              CONTACT US
+            </button>
           </div>
         </motion.div>
       </div>

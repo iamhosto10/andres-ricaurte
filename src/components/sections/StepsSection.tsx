@@ -5,61 +5,79 @@ import { Step } from "@/types";
 
 const steps: Step[] = [
   {
-    number: "01",
+    number: "1",
     title: "Diagnóstico",
-    description: "Descubre qué es lo que realmente le impide avanzar a tu negocio y cómo explotar su potencial."
+    description: "Analizamos tu estado actual y detectamos las fugas de dinero en tu proceso comercial.",
   },
   {
-    number: "02",
+    number: "2",
     title: "Master Class",
-    description: "Participa GRATIS en una clase maestra que te servirá como entrenamiento para empezar a facturar más."
+    description: "Formación estratégica para entender el potencial de la IA aplicado a tu nicho específico.",
   },
   {
-    number: "03",
+    number: "3",
     title: "Consultoría AR",
-    description: "Regístrate en una consultoría de acción rápida para llevar tu negocio al siguiente nivel de inmediato."
+    description: "Manos a la obra. Implementamos juntos las herramientas y automatizaciones clave.",
   },
   {
-    number: "04",
-    title: "Transformación Completada",
-    description: "Empieza una nueva etapa y decide pasar al siguiente nivel de crecimiento, posicionamiento y ventas."
-  }
+    number: "4",
+    title: "Transformación",
+    description: "Negocio escalable, ventas predecibles y una marca que trabaja 24/7 de forma autónoma.",
+  },
 ];
 
 export default function StepsSection() {
   return (
-    <section className="py-24 bg-surface-container-low border-y border-outline-variant/10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <motion.div
-          className="mb-16"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
-          <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-4 block">
-            ¿Cómo y dónde empezar?
-          </span>
-          <h2 className="font-headline text-4xl font-extrabold tracking-tight text-on-surface">
-            Sigue estos sencillos pasos
-          </h2>
-        </motion.div>
+    <section className="py-24 bg-inverse-surface text-inverse-on-surface overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl font-extrabold font-headline mb-4 tracking-tight">
+              Tu Ruta hacia la Transformación
+            </h2>
+            <p className="text-slate-400 text-lg max-w-md">
+              Un proceso de 4 pasos diseñado para implementar el marketing con IA de forma fluida.
+            </p>
+          </motion.div>
+          <motion.button
+            className="bg-primary hover:bg-primary/90 text-white font-extrabold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-primary/20"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            Quiero mi ruta
+          </motion.button>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="flex flex-col gap-4"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative group"
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black mb-8 group-hover:scale-110 transition-transform ${
+                index === 0
+                  ? "bg-primary shadow-[0_0_30px_rgba(255,1,1,0.3)]"
+                  : "bg-white/10 border border-white/5"
+              }`}>
                 {step.number}
               </div>
-              <h4 className="font-headline font-bold text-on-surface text-xl">{step.title}</h4>
-              <p className="text-on-surface-variant text-sm">{step.description}</p>
+              <h3 className="text-xl font-extrabold mb-3 tracking-tight">
+                {step.title}
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                {step.description}
+              </p>
             </motion.div>
           ))}
         </div>
