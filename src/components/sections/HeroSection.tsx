@@ -14,21 +14,24 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label">
-            Andrés Ricaurte | Estratega en Marketing y Ventas con IA
+            Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
-            Factura más con un sistema de{" "}
-            <span className="text-primary">marketing y ventas</span>{" "}
-            automatizadas.
+            <span className="text-primary">
+              Sistemas de Ventas Automatizados exclusivos{" "}
+            </span>{" "}
+            para Clínicas, Restaurantes y Negocios Digitales.
           </h1>
           <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
-            Haz que tu negocio aparezca en ChatGPT, Google y redes sociales.
-            Aplica el <strong>Método CRACS</strong> para dominar el mercado digital
-            actual.
+            Transformamos la forma en que adquieres clientes. A través del
+            <strong>Método CRACS</strong> , automatizamos tus procesos de ventas
+            con Inteligencia Artificial sin perder tu esencia humana. El
+            resultado: escalas tu facturación de forma predecible, reduciendo el
+            tiempo de seguimiento y profesionalizando tus ventas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="primary-gradient text-on-primary text-xl font-bold px-10 py-5 rounded-xl shadow-soft-xl hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-[0.98]">
-              Quiero conocer más
+            <button className="primary-gradient text-on-primary text-xl font-bold px-10 py-5 rounded-xl shadow-soft-xl hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
+              Quiero mi ruta
             </button>
             <div className="flex items-center gap-3 px-4">
               <div className="flex -space-x-2">
@@ -50,7 +53,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <span className="text-sm font-semibold text-secondary tracking-tight">
-                +500 Negocios impactados
+                Descubre aquí la ruta estratégica para tu negocio.
               </span>
             </div>
           </div>
@@ -67,7 +70,7 @@ export default function HeroSection() {
               alt="Andrés Ricaurte Profile"
               fill
               className="w-full h-full object-cover object-top"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ugOoUGMSwLzdThsIEeUFGoBiXLj3cv-g4VfFbSYc0XhLRh4B56n_kzDw6CVwoYwGmxki28RZ7EF0ZKTQO2_xvStpPa04e51DnnQS2M2AENREe0QHNCjLAWcqvYgo522gKTPAJqeOJ8QhRLWQmt33RRILuaWx11xmZQGE9FpbjnkUlp5FTvWSVzLP4T1vXEtl2nkXajS4qCd5NWY41AmN3zxg9-yKffI-ORv1FrG8rainXQQFf3HxrvUnUPH0DNJtdSiFhACjf5ofGA"
+              src={"/Andres_Ricaurte_Consultor_Marketing.webp"}
             />
           </div>
           {/* Decorative element */}

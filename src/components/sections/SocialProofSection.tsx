@@ -19,10 +19,18 @@ export default function SocialProofSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-2xl font-black text-on-surface">Eurosalud</span>
-            <span className="text-2xl font-black text-on-surface tracking-tighter">SALVATOR</span>
-            <span className="text-2xl font-black text-on-surface italic">Terranova</span>
-            <span className="text-2xl font-black text-on-surface uppercase tracking-widest">URBANIA</span>
+            <span className="text-2xl font-black text-on-surface">
+              Comfacesar
+            </span>
+            <span className="text-2xl font-black text-on-surface tracking-tighter">
+              Universidad Popular del Cesar
+            </span>
+            <span className="text-2xl font-black text-on-surface italic">
+              Area Andina
+            </span>
+            <span className="text-2xl font-black text-on-surface uppercase tracking-widest">
+              Politecnico Grancolombiano
+            </span>
           </motion.div>
           <motion.div
             className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden grayscale opacity-40 hover:opacity-80 transition-all soft-shadow h-64"
@@ -35,7 +43,7 @@ export default function SocialProofSection() {
               alt="Team"
               fill
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida/ADBb0ugz4elHzG2eX7YsXZoCId6NufBdn6gjbFvXGpkMAjnUkqr3mVrZhO9Iv4FKrEVo4Rof043p2DHjQbjR3RX8TE1tF9jfI-BVOxDxjtGuxR7gBsV2ipIC3pz2kIJ3uaxBkjdlLcWMjGz5TmOqt9fDrdKRZdgy4iBiLzUJ150wLur21PYaCZ0Tfgc2Iz5NzzlHRIBZtjrhOIO8hJFLCkPxij9ateNbbQRGE7X-fJU8qCNjaM1u7k7amZZO7LsE-z6W2_7m3fdCrBfinQ"
+              src="/Andres_Ricaurte_Grupo.webp"
             />
           </motion.div>
         </div>
