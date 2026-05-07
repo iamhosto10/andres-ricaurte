@@ -1,72 +1,99 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Course } from "@/types";
-
-const courses: Course[] = [
-  {
-    title: "Cómo Ganar Elecciones con IA",
-    category: "Marketing Político 6.0",
-    link: "https://andresricaurte.com/wp-content/uploads/2025/09/Cursos-Web-Andres-Ricaurte-COMO-GANAR-ELECCIONES-CON-INTELIGENCIA-ARTIFICIAL-1-1024x682.png",
-  },
-  {
-    title: "Cómo Aparecer en ChatGPT",
-    category: "Posicionamiento de Marca",
-    link: "https://andresricaurte.com/wp-content/uploads/2025/09/Cursos-Web-Andres-Ricaurte-COMO-APARECER-EN-CHATGPT-1024x682.png",
-  },
-  {
-    title: "Vende Más con IA en Navidad",
-    category: "Estrategias Estacionales",
-    link: "https://andresricaurte.com/wp-content/uploads/2025/09/Cursos-Web-Andres-Ricaurte-VENDE-MAS-CON-INTELIGENCIA-ARTIFICIAL-EN-NAVIDAD-1024x682.png",
-  },
-];
 
 export default function CourseSection() {
   return (
-    <section className="py-24 bg-surface border-t border-outline-variant/10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
+    <section className="py-24 bg-surface-container">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.h2
+          className="text-4xl font-extrabold mb-16 font-headline text-center tracking-tight"
+          initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-4 block">
-            Cursos Virtuales
-          </span>
-          <h2 className="font-headline text-4xl font-extrabold tracking-tight text-on-surface mb-12">
-            Virtual Master Class
-          </h2>
-        </motion.div>
+          Aprende a tu ritmo
+        </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {courses.map((course, index) => (
-            <motion.div
-              key={index}
-              className="bg-surface-container-high rounded-xl overflow-hidden border border-outline-variant/10 text-left hover:border-primary/30 transition-colors duration-300"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <div className="aspect-video bg-surface-container-highest flex items-center justify-center">
-                <img
-                  src={course.link}
-                  alt={course.title}
-                  className="object-cover w-full h-full"
-                />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <motion.div
+            className="bg-white rounded-3xl overflow-hidden soft-shadow hover:-translate-y-2 transition-all border border-slate-100 flex flex-col"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0 }}
+          >
+            <div className="h-56 bg-slate-900 flex items-center justify-center p-8">
+              <h3 className="text-3xl font-black text-white text-center leading-tight tracking-tight">
+                Marketing Político 6.0
+              </h3>
+            </div>
+            <div className="p-10 flex-grow">
+              <div className="flex items-center gap-2 mb-6">
+                <span className="material-symbols-outlined text-primary font-black" style={{ fontVariationSettings: "'FILL' 1" }}>local_fire_department</span>
+                <span className="text-xs font-extrabold text-primary uppercase tracking-[0.15em]">Bestseller</span>
               </div>
-              <div className="p-6 space-y-4">
-                <h4 className="font-bold text-on-surface">{course.title}</h4>
-                <p className="text-sm text-on-surface-variant">
-                  {course.category}
-                </p>
-                <button className="w-full py-2 bg-surface-container-highest text-on-surface text-sm font-bold rounded hover:bg-surface-container-highest/80 transition-colors">
-                  Join Class
-                </button>
+              <p className="text-slate-500 text-base mb-8 leading-relaxed">
+                Domina las campañas electorales con segmentación psicográfica y herramientas de IA.
+              </p>
+              <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-slate-100 transition-colors tracking-tight">
+                Ver Detalles
+              </button>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="bg-white rounded-3xl overflow-hidden soft-shadow hover:-translate-y-2 transition-all border border-slate-100 flex flex-col"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <div className="h-56 bg-slate-800 flex items-center justify-center p-8">
+              <h3 className="text-3xl font-black text-white text-center leading-tight tracking-tight">
+                Posicionamiento (ChatGPT)
+              </h3>
+            </div>
+            <div className="p-10 flex-grow">
+              <div className="flex items-center gap-2 mb-6">
+                <span className="material-symbols-outlined text-primary font-black">psychology</span>
+                <span className="text-xs font-extrabold text-primary uppercase tracking-[0.15em]">Nuevo</span>
               </div>
-            </motion.div>
-          ))}
+              <p className="text-slate-500 text-base mb-8 leading-relaxed">
+                Haz que la IA recomiende tu marca. SEO para buscadores conversacionales.
+              </p>
+              <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-slate-100 transition-colors tracking-tight">
+                Ver Detalles
+              </button>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="bg-white rounded-3xl overflow-hidden soft-shadow hover:-translate-y-2 transition-all border border-slate-100 flex flex-col"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className="h-56 primary-gradient flex items-center justify-center p-8">
+              <h3 className="text-3xl font-black text-white text-center leading-tight tracking-tight">
+                Vende Más en Navidad
+              </h3>
+            </div>
+            <div className="p-10 flex-grow">
+              <div className="flex items-center gap-2 mb-6">
+                <span className="material-symbols-outlined text-primary font-black">calendar_month</span>
+                <span className="text-xs font-extrabold text-primary uppercase tracking-[0.15em]">Temporal</span>
+              </div>
+              <p className="text-slate-500 text-base mb-8 leading-relaxed">
+                Estrategias de alto impacto para maximizar las ventas en la temporada más importante.
+              </p>
+              <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-slate-100 transition-colors tracking-tight">
+                Ver Detalles
+              </button>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
