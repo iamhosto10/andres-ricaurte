@@ -6,17 +6,21 @@ import StepsSection from "@/components/sections/StepsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CourseSection from "@/components/sections/CourseSection";
 import ContactSection from "@/components/sections/ContactSection";
+import ProblemSection from "@/components/sections/ProblemSection";
+import PartnersCarouselSection from "@/components/sections/PartnersCarouselSection";
+import TeamSection from "@/components/sections/TeamSection";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-on-background selection:bg-primary selection:text-on-primary">
       <HeroSection />
+      <ProblemSection />
       <TestimonialsSection />
-      {/* <SocialProofSection /> */}
       <MethodSection />
       <ServicesSection />
       <StepsSection />
-      <TestimonialsSection />
+      <PartnersCarouselSection />
+      <TeamSection />
       <CourseSection />
       <ContactSection />
     </main>

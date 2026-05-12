@@ -37,16 +37,18 @@ export default function MethodSection() {
           </h2>
           <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
             <p>
-              Hola, soy <strong>Andrés Alfonso Ricaurte</strong>. Mi misión es
-              transformar la forma en que las empresas conectan con sus clientes
-              en la era de la Inteligencia Artificial.
+              Consultor y mentor que combina automatización inteligente y
+              humanización de marca para crear sistemas de ventas sostenibles.
             </p>
             <p>
-              He visto a cientos de empresarios frustrados por invertir en
-              publicidad que no retorna, o por procesos manuales que consumen su
-              tiempo y el de sus equipos. Por eso diseñé un sistema que
-              automatiza lo tedioso y potencia lo humano.
+              <strong>Andrés Alfonso Ricaurte</strong>. entiende el mayor reto
+              de los empresarios: falta de clientes, procesos manuales y poco
+              tiempo para crecer. Por eso creó el método CRACS, para que tu
+              negocio venda más, ahorre tiempo y convierta clientes en
+              relaciones duraderas; además desarrolló el Método MASPro, enfocado
+              en fortalecer ese profesional de las ventas que tienes.
             </p>
+
             <p>
               A través del Método CRACS, no solo vendes más; construyes una
               reputación digital imbatible que te posiciona como el líder de tu

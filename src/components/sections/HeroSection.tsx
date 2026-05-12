@@ -18,7 +18,8 @@ export default function HeroSection() {
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
             <span className="text-primary">
-              Sistemas de Ventas Automatizados exclusivos{" "}
+              Consultoría de Marketing e Inteligencia Artificial: Creo Sistemas
+              de Ventas Automatizados exclusivos{" "}
             </span>{" "}
             para Clínicas, Restaurantes y Negocios Digitales.
           </h1>

@@ -54,6 +54,15 @@ const testimonials: Testimonial[] = [
   },
 ];
 
+// 1. Definimos los logos (puedes cambiar los nombres y rutas luego)
+const partnerLogos = [
+  { name: "Eurosalud", logoUrl: "/EuroSalud.webp" },
+  { name: "Punto y coma", logoUrl: "/PuntoYComa.webp" },
+  { name: "Salvators", logoUrl: "/Salvators.webp" },
+  { name: "Terranova", logoUrl: "/Terranova.webp" },
+  { name: "UrbanaDomicilios", logoUrl: "/UrbanaDomicios.webp" },
+];
+
 export default function TestimonialsSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -102,7 +111,7 @@ export default function TestimonialsSection() {
                   className="pl-4 md:pl-8 basis-full lg:basis-1/2"
                 >
                   <div className="bg-white p-8 md:p-10 rounded-3xl soft-shadow border border-slate-100 flex flex-col h-full">
-                    <p className="text-on-surface mb-10 text-lg leading-relaxed italic flex-grow">
+                    <p className="text-on-surface mb-10 text-lg leading-relaxed italic grow">
                       &quot;{testimonial.quote}&quot;
                     </p>
                     <div className="flex items-center gap-4">
@@ -151,59 +160,34 @@ export default function TestimonialsSection() {
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3 }}
+        className="pt-16 border-t border-slate-100"
+      >
+        <p className="text-center text-slate-400 text-sm font-semibold uppercase tracking-[0.2em] mb-10">
+          Empresas que han transformado sus procesos
+        </p>
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 ">
+          {partnerLogos.map((logo, index) => (
+            <div
+              key={index}
+              className=" transition-all duration-500 hover:scale-110"
+            >
+              <div className="relative w-32 h-12 md:w-50 md:h-50">
+                <Image
+                  src={logo.logoUrl}
+                  alt={logo.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 }
-
-// export default function TestimonialsSection() {
-//   return (
-//     <section className="py-24 bg-surface">
-//       <div className="max-w-7xl mx-auto px-6">
-//         <motion.h2
-//           className="text-4xl font-extrabold text-center mb-16 font-headline tracking-tight"
-//           initial={{ opacity: 0, y: -20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           viewport={{ once: true, margin: "-100px" }}
-//           transition={{ duration: 0.6 }}
-//         >
-//           Casos de Éxito Reales
-//         </motion.h2>
-
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-//           {testimonials.map((testimonial, index) => (
-//             <motion.div
-//               key={index}
-//               initial={{ opacity: 0, y: 30 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               viewport={{ once: true, margin: "-50px" }}
-//               transition={{ duration: 0.5, delay: index * 0.1 }}
-//               className="bg-white p-10 rounded-3xl soft-shadow border border-slate-100 flex flex-col"
-//             >
-//               <p className="text-on-surface mb-10 text-lg leading-relaxed italic flex-grow">
-//                 &quot;{testimonial.quote}&quot;
-//               </p>
-//               <div className="flex items-center gap-4">
-//                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
-//                   <Image
-//                     alt={testimonial.name}
-//                     fill
-//                     className="object-cover"
-//                     src={testimonial.avatarUrl!}
-//                   />
-//                 </div>
-//                 <div>
-//                   <p className="font-bold text-sm tracking-tight">
-//                     {testimonial.name}
-//                   </p>
-//                   <p className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
-//                     {testimonial.role}
-//                   </p>
-//                 </div>
-//               </div>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
