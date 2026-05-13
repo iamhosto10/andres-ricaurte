@@ -7,22 +7,26 @@ const steps: Step[] = [
   {
     number: "1",
     title: "Diagnóstico",
-    description: "Analizamos tu estado actual y detectamos las fugas de dinero en tu proceso comercial.",
+    description:
+      "Analizamos tu estado actual y detectamos las fugas de dinero en tu proceso comercial.",
   },
   {
     number: "2",
     title: "Master Class",
-    description: "Formación estratégica para entender el potencial de la IA aplicado a tu nicho específico.",
+    description:
+      "Formación estratégica para entender el potencial de la IA aplicado a tu nicho específico.",
   },
   {
     number: "3",
     title: "Consultoría AR",
-    description: "Manos a la obra. Implementamos juntos las herramientas y automatizaciones clave.",
+    description:
+      "Manos a la obra. Implementamos juntos las herramientas y automatizaciones clave.",
   },
   {
     number: "4",
     title: "Transformación",
-    description: "Negocio escalable, ventas predecibles y una marca que trabaja 24/7 de forma autónoma.",
+    description:
+      "Negocio escalable, ventas predecibles y una marca que trabaja 24/7 de forma autónoma.",
   },
 ];
 
@@ -38,14 +42,16 @@ export default function StepsSection() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-extrabold font-headline mb-4 tracking-tight">
-              Tu Ruta hacia la Transformación
+              Tu Ruta hacia la{" "}
+              <p className="bg-primary w-fit"> Transformación</p>
             </h2>
             <p className="text-slate-400 text-lg max-w-md">
-              Un proceso de 4 pasos diseñado para implementar el marketing con IA de forma fluida.
+              Un proceso de 4 pasos diseñado para implementar el marketing con
+              IA de forma fluida.
             </p>
           </motion.div>
           <motion.button
-            className="bg-primary hover:bg-primary/90 text-white font-extrabold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-primary/20"
+            className="bg-primary hover:bg-primary/90 text-white font-extrabold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-primary/20 cursor-pointer"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -65,11 +71,13 @@ export default function StepsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative group"
             >
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black mb-8 group-hover:scale-110 transition-transform ${
-                index === 0
-                  ? "bg-primary shadow-[0_0_30px_rgba(255,1,1,0.3)]"
-                  : "bg-white/10 border border-white/5"
-              }`}>
+              <div
+                className={`w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black mb-8 group-hover:scale-110 transition-transform ${
+                  index === 0
+                    ? "bg-primary shadow-[0_0_30px_rgba(255,1,1,0.3)]"
+                    : "bg-white/10 border border-white/5"
+                }`}
+              >
                 {step.number}
               </div>
               <h3 className="text-xl font-extrabold mb-3 tracking-tight">

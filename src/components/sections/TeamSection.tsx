@@ -18,7 +18,7 @@ const team = [
     role: "Fullstack & Mobile Engineer",
     description:
       "Ingeniero experto en integrar Inteligencia Artificial y desarrollar arquitecturas web/móviles de alto rendimiento.",
-    image: "/Gerardo1.jpeg",
+    image: "/Gerardo.webp",
     skills: ["IA", "Next.js", "Mobile"],
   },
   {

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ContactSection() {
   return (
@@ -26,9 +27,11 @@ export default function ContactSection() {
           </div>
 
           <div className="relative z-10 w-full md:w-auto">
-            <button className="w-full md:w-auto bg-primary text-white text-2xl font-black px-16 py-8 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(255,1,1,0.3)] border-b-4 border-red-800">
-              CONTACTAME
-            </button>
+            <Link href="/contacto">
+              <button className="w-full md:w-auto bg-primary text-white text-2xl font-black px-16 py-8 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(255,1,1,0.3)] border-b-4 border-red-800 cursor-pointer">
+                CONTACTAME
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

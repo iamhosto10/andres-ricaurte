@@ -1,5 +1,4 @@
 import HeroSection from "@/components/sections/HeroSection";
-import SocialProofSection from "@/components/sections/SocialProofSection";
 import MethodSection from "@/components/sections/MethodSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import StepsSection from "@/components/sections/StepsSection";

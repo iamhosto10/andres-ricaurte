@@ -18,14 +18,13 @@ export default function HeroSection() {
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
             <span className="text-primary">
-              Consultoría de Marketing e Inteligencia Artificial: Creo Sistemas
-              de Ventas Automatizados exclusivos{" "}
+              Consultoría de Marketing e Inteligencia Artificial:{" "}
             </span>{" "}
-            para Clínicas, Restaurantes y Negocios Digitales.
+            Creo Sistemas para Clínicas, Restaurantes y Negocios Digitales.
           </h1>
           <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
             Transformamos la forma en que adquieres clientes. A través del
-            <strong>Método CRACS</strong> , automatizamos tus procesos de ventas
+            <strong> Método CRACS</strong>, automatizamos tus procesos de ventas
             con Inteligencia Artificial sin perder tu esencia humana. El
             resultado: escalas tu facturación de forma predecible, reduciendo el
             tiempo de seguimiento y profesionalizando tus ventas.
