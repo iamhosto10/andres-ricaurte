@@ -1,0 +1,173 @@
+import { defineType } from "sanity";
+
+export default defineType({
+  name: "blog",
+  title: "Blog",
+  type: "document",
+  fields: [
+    {
+      name: "title",
+      title: "Title",
+      type: "string",
+      validation: (Rule) => Rule.min(2).max(100),
+    },
+    {
+      name: "focusTitle",
+      title: "Focus Title",
+      type: "string",
+      validation: (Rule) => Rule.min(2).max(100),
+    },
+    {
+      name: "continueTitle",
+      title: "Continue Title",
+      type: "string",
+      validation: (Rule) => Rule.min(1).max(100),
+    },
+    {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: (doc) => {
+          const title = doc.title ?? "";
+          const focus = doc.focusTitle ?? "";
+          const cont = doc.continueTitle ?? "";
+          return `${title + " "}${focus + " "}${cont}`;
+        },
+        maxLength: 96,
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "publishedAt",
+      title: "Published At",
+      type: "datetime",
+    },
+    {
+      name: "mainImage",
+      title: "Main Image",
+      type: "image",
+      options: { hotspot: true },
+    },
+    {
+      name: "excerpt",
+      title: "Excerpt",
+      type: "text",
+      validation: (Rule) => Rule.max(500),
+    },
+    {
+      name: "audio",
+      title: "Archivo de audio",
+      type: "file",
+      options: { accept: "audio/mpeg" },
+    },
+    {
+      name: "body",
+      title: "Body",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            { name: "title", title: "Title", type: "string" },
+
+            {
+              name: "body",
+              title: "body",
+              type: "array",
+              of: [
+                {
+                  type: "block",
+                  styles: [
+                    { title: "Normal", value: "normal" },
+                    { title: "H1", value: "h1" },
+                    { title: "H2", value: "h2" },
+                    { title: "Quote", value: "blockquote" },
+                  ],
+                  lists: [
+                    { title: "Bullet", value: "bullet" },
+                    { title: "Numbered", value: "number" },
+                  ],
+                  marks: {
+                    decorators: [
+                      { title: "Strong", value: "strong" },
+                      { title: "Emphasis", value: "em" },
+                      { title: "Underline", value: "underline" },
+                      { title: "Code", value: "code" },
+                    ],
+                    annotations: [
+                      {
+                        name: "link",
+                        type: "object",
+                        title: "Link",
+                        fields: [
+                          { name: "href", type: "string", title: "URL" },
+                        ],
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+
+            {
+              name: "asset",
+              title: "Image",
+              type: "image",
+              options: { hotspot: true },
+            },
+            {
+              name: "table",
+              title: "Table",
+              type: "object",
+              fields: [
+                {
+                  name: "rows",
+                  title: "Rows",
+                  type: "array",
+                  of: [
+                    {
+                      type: "object",
+                      fields: [
+                        {
+                          name: "cells",
+                          title: "Cells",
+                          type: "array",
+                          of: [{ type: "string" }],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      name: "relatedNews",
+      title: "Related News",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "blog" }] }],
+    },
+  ],
+  preview: {
+    select: {
+      title: "title",
+      focusTitle: "focusTitle",
+      continueTitle: "continueTitle",
+      media: "mainImage", // opcional, para que muestre la imagen
+    },
+    prepare({ title, focusTitle, continueTitle, media }) {
+      const finalTitle = [title, focusTitle, continueTitle]
+        .filter(Boolean)
+        .join(" ");
+      return {
+        title: finalTitle || "Sin título",
+        media,
+      };
+    },
+  },
+});
