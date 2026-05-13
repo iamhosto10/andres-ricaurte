@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MethodSection() {
   return (
-    <section className="py-24 bg-surface">
+    <section className="py-24 bg-surface-container">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <motion.div
           className="order-2 md:order-1"

@@ -71,7 +71,7 @@ export default function PartnersCarouselSection() {
                   className="pl-1 md:pl-1 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4"
                 >
                   <div className="p-1 flex items-center justify-center transition-all duration-300">
-                    <div className="relative w-full h-20 md:h-32">
+                    <div className="relative w-full h-32 md:h-50">
                       {/* Espacio para tus imágenes */}
                       <Image
                         src={partner.url}

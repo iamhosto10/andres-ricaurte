@@ -68,7 +68,7 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-surface-container">
+    <section className="py-24 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="text-center mb-20"

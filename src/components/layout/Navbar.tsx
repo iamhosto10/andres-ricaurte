@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { name: "Inicio", href: "/" },
   { name: "Blog", href: "/blog" },
   { name: "Cursos", href: "/cursos" },
   { name: "Nosotros", href: "/nosotros" },
@@ -14,6 +14,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -84,9 +86,9 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
-                  link.name === "Contacto"
-                    ? "bg-inverse-surface text-surface hover:scale-105 shadow-md"
-                    : "text-on-surface/80 hover:text-primary hover:bg-primary/10"
+                  pathname.includes(link.href)
+                    ? "bg-inverse-surface text-surface shadow-lg "
+                    : "text-on-surface/80 hover:text-primary hover:bg-primary/10 group"
                 }`}
               >
                 {link.name}
@@ -133,14 +135,14 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`flex items-center justify-between px-5 py-4 text-lg font-bold rounded-2xl transition-all ${
-                      link.name === "Contacto"
+                      pathname.includes(link.href)
                         ? "bg-inverse-surface text-surface shadow-lg mt-2"
                         : "text-on-surface/80 hover:text-primary hover:bg-primary/10 group"
                     }`}
                   >
                     {link.name}
                     <ChevronRight
-                      className={`w-5 h-5 ${link.name === "Contacto" ? "text-surface/70" : "text-primary/40 group-hover:text-primary"}`}
+                      className={`w-5 h-5 ${pathname.includes(link.href) ? "text-surface/70" : "text-primary/40 group-hover:text-primary"}`}
                     />
                   </Link>
                 </motion.div>

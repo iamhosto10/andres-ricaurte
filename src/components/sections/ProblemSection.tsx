@@ -5,7 +5,7 @@ import { Brain, Clock, TrendingUp } from "lucide-react";
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-24 bg-surface-container">
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2

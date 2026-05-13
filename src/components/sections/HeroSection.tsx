@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <header className="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-surface">
+    <header className="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-surface max-w-full">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         <motion.div
           className="md:col-span-7 z-10"

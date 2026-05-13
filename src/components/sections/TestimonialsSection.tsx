@@ -176,7 +176,7 @@ export default function TestimonialsSection() {
               key={index}
               className=" transition-all duration-500 hover:scale-110"
             >
-              <div className="relative w-32 h-12 md:w-50 md:h-50">
+              <div className="relative w-32 h-32 md:w-50 md:h-50">
                 <Image
                   src={logo.logoUrl}
                   alt={logo.name}
