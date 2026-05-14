@@ -16,7 +16,7 @@ export default function HeroSection() {
           <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label">
             Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
           </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
             <span className="text-primary">
               Consultoría de Marketing e Inteligencia Artificial:{" "}
             </span>{" "}
