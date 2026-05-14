@@ -7,8 +7,6 @@ import { Menu, X, ChevronRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { name: "Inicio", href: "/" },
-
   // { name: "Cursos", href: "/cursos" },
   { name: "Servicios", href: "/servicios" },
   { name: "Equipo", href: "/equipo" },
