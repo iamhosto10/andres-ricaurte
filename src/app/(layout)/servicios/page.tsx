@@ -149,7 +149,7 @@ export default function ServiciosPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 md:p-12 rounded-[2rem] soft-shadow border border-slate-100 flex flex-col h-full hover:border-primary/20 transition-colors duration-300"
+              className="bg-white p-8 md:p-12 rounded-4xl soft-shadow border border-slate-100 flex flex-col h-full hover:border-primary/20 transition-colors duration-300"
             >
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 shrink-0">
                 {service.icon}
@@ -159,7 +159,7 @@ export default function ServiciosPage() {
                 {service.title}
               </h2>
 
-              <p className="text-slate-500 text-base leading-relaxed mb-8 flex-grow">
+              <p className="text-slate-500 text-base leading-relaxed mb-8 grow">
                 {service.description}
               </p>
 
@@ -180,7 +180,7 @@ export default function ServiciosPage() {
                 href={`/servicios/${service.slug}`}
                 className="block mt-auto w-full"
               >
-                <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-primary hover:text-white transition-all duration-300 tracking-tight text-center">
+                <button className="w-full py-4 bg-slate-50 text-slate-900 font-extrabold rounded-xl hover:bg-primary hover:text-white transition-all duration-300 tracking-tight text-center cursor-pointer">
                   Ver Detalles
                 </button>
               </Link>

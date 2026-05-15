@@ -102,7 +102,7 @@ export default function ServicesSection() {
               <h3 className="text-xl font-extrabold mb-4 text-on-surface">
                 {service.title}
               </h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-8 flex-grow">
+              <p className="text-sm text-slate-500 leading-relaxed mb-8 grow">
                 {service.description}
               </p>
               <button className="text-primary font-bold text-sm flex items-center gap-2 group tracking-tight">

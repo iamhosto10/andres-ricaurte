@@ -173,7 +173,7 @@ export default function ServiceDetailPage() {
               escalar tu facturación al siguiente nivel.
             </p>
             <Link href="/contacto">
-              <button className="primary-gradient px-12 py-5 rounded-2xl font-extrabold text-white text-lg md:text-xl shadow-[0_20px_50px_rgba(255,1,1,0.3)] hover:scale-105 active:scale-95 transition-all w-full md:w-auto border-b-4 border-red-800">
+              <button className="primary-gradient px-12 py-5 rounded-2xl font-extrabold text-white text-lg md:text-xl shadow-[0_20px_50px_rgba(255,1,1,0.3)] hover:scale-105 active:scale-95 transition-all w-full md:w-auto border-b-4 border-red-800 cursor-pointer">
                 Agendar Asesoría
               </button>
             </Link>
