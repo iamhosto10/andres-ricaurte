@@ -6,23 +6,25 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <header className="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-surface max-w-full">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <motion.div
-          className="md:col-span-7 z-10"
+          className="lg:col-span-6 z-10"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label">
-            Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
-          </span>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight">
+          <div className="w-full justify-center flex lg:justify-start">
+            <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label ">
+              Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-4xl lg:text-6xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight md:text-center lg:text-left">
             <span className="text-primary">
               Consultoría de Marketing e Inteligencia Artificial:{" "}
             </span>{" "}
             Creo Sistemas para Clínicas, Restaurantes y Negocios Digitales.
           </h1>
-          <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed">
+          <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed md:text-center lg:text-left mx-auto">
             Transformamos la forma en que adquieres clientes. A través del
             <strong> Método CRACS</strong>, automatizamos tus procesos de ventas
             con Inteligencia Artificial sin perder tu esencia humana. El
@@ -60,12 +62,12 @@ export default function HeroSection() {
         </motion.div>
 
         <motion.div
-          className="md:col-span-5 relative flex justify-center"
+          className=" lg:col-span-6 relative flex justify-center"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
-          <div className="relative w-full aspect-[4/5] max-w-md bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
+          <div className="relative w-full aspect-[4/5] md:max-w-4/5 max-w-full bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
             <Image
               alt="Andrés Ricaurte Profile"
               fill

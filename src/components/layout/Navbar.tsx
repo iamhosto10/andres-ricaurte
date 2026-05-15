@@ -7,6 +7,7 @@ import { Menu, X, ChevronRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
+  { name: "Inicio", href: "/" },
   // { name: "Cursos", href: "/cursos" },
   { name: "Servicios", href: "/servicios" },
   { name: "Equipo", href: "/equipo" },
@@ -88,9 +89,11 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 ${
-                  pathname.includes(link.href)
+                  pathname === "/" && link.href === "/"
                     ? "bg-inverse-surface text-surface shadow-lg "
-                    : "text-on-surface/80 hover:text-primary hover:bg-primary/10 group"
+                    : pathname.includes(link.href) && link.href !== "/"
+                      ? "bg-inverse-surface text-surface shadow-lg "
+                      : "text-on-surface/80 hover:text-primary hover:bg-primary/10 group"
                 }`}
               >
                 {link.name}

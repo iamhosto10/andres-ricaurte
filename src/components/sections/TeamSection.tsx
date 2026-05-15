@@ -10,7 +10,7 @@ const team = [
     role: "CEO & Estratega de Negocios",
     description:
       "Especialista en escalabilidad empresarial y optimización de ventas con enfoque estratégico.",
-    image: "/Andres_Ricaurte_Consultor_Marketing.webp",
+    image: "/AndresRicaurteTeams.jpeg",
     skills: ["Estrategia", "Ventas", "Liderazgo"],
   },
   {

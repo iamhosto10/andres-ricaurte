@@ -78,11 +78,11 @@ export default function ServicesSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-extrabold text-on-surface mb-4 font-headline tracking-tight">
-            Nuestros Pilares de Crecimiento
+            Servicios
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
-            Cuatro soluciones diseñadas para llevar tu facturación al siguiente
-            nivel utilizando tecnología de punta.
+            soluciones diseñadas para llevar tu facturación al siguiente nivel
+            utilizando tecnología de punta.
           </p>
         </motion.div>
 
