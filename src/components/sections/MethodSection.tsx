@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MethodSection() {
   return (
-    <section className="py-24 bg-surface-container">
+    <section className="py-24 bg-inverse-surface text-inverse-on-surface">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <motion.div
           className="order-2 md:order-1"
@@ -31,11 +31,11 @@ export default function MethodSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-extrabold text-on-surface mb-8 font-headline tracking-tight">
+          <h2 className="text-4xl font-extrabold text-inverse-on-surface mb-8 font-headline tracking-tight">
             ¿Quién está detrás del{" "}
             <span className="text-primary">Método CRACS</span>?
           </h2>
-          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+          <div className="space-y-6 text-lg text-inverse-on-surface/80 leading-relaxed">
             <p>
               Consultor y mentor que combina automatización inteligente y
               humanización de marca para crear sistemas de ventas sostenibles.
@@ -67,10 +67,10 @@ export default function MethodSection() {
               </div>
 
               <div>
-                <p className="font-bold text-on-surface text-lg">
+                <p className="font-bold text-inverse-on-surface text-lg">
                   Estrategia Validada
                 </p>
-                <p className="text-sm text-slate-500 font-medium tracking-tight">
+                <p className="text-sm text-inverse-on-surface/80 font-medium tracking-tight">
                   Más de 10 años en el ecosistema digital.
                 </p>
               </div>

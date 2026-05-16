@@ -5,7 +5,7 @@ import { Brain, Clock, TrendingUp } from "lucide-react";
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 bg-surface-container">
+    <section className="py-24 bg-inverse-surface text-inverse-on-surface ">
       <div className="container px-4 mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2
@@ -24,7 +24,7 @@ export default function ProblemSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6 text-lg md:text-xl text-on-background/80 leading-relaxed"
+            className="space-y-6 text-lg md:text-xl text-inverse-on-surface/80 leading-relaxed"
           >
             <p>
               Sé que el mayor reto que enfrentas hoy es la falta de clientes, el

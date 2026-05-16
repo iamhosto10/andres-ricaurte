@@ -33,7 +33,7 @@ const team = [
 
 export default function TeamSection() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-inverse-surface text-inverse-on-surface">
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center mb-16">
@@ -46,14 +46,14 @@ export default function TeamSection() {
             El Equipo Detrás del Éxito
           </motion.h2>
 
-          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+          <p className="text-inverse-on-surface/80 text-lg max-w-2xl mx-auto">
             Combinamos estrategia de negocios, ingeniería de vanguardia y
             creatividad para escalar tu facturación.
           </p>
         </div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch ">
           {team.map((member, index) => (
             <motion.div
               key={index}
@@ -61,13 +61,13 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group bg-white rounded-3xl p-8 border border-slate-100 soft-shadow hover:border-primary/30 transition-all duration-300 flex flex-col h-full"
+              className="group rounded-3xl p-8 border border-slate-100 soft-shadow hover:border-white transition-all duration-300 flex flex-col h-full bg-inverse-surface/60"
             >
               {/* TOP CONTENT */}
               <div className="flex flex-col flex-grow">
                 {/* IMAGE */}
                 <div className="relative w-32 h-32 mx-auto mb-6">
-                  <div className="absolute inset-0 bg-primary/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-white/35 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500" />
 
                   <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-md">
                     <Image
@@ -90,7 +90,7 @@ export default function TeamSection() {
                   </p>
 
                   {/* DESCRIPTION */}
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow min-h-18">
+                  <p className="text-inverse-on-surface/80 text-sm leading-relaxed mb-6 flex-grow min-h-18">
                     {member.description}
                   </p>
 
@@ -99,7 +99,7 @@ export default function TeamSection() {
                     {member.skills.map((skill, sIndex) => (
                       <span
                         key={sIndex}
-                        className="px-3 py-1 bg-slate-50 text-slate-500 text-xs font-medium rounded-full border border-slate-100 h-fit"
+                        className="px-3 py-1 bg-surface/20 text-inverse-on-surface/80 text-xs font-medium rounded-full border border-inverse-surface/20 h-fit"
                       >
                         {skill}
                       </span>
@@ -109,8 +109,8 @@ export default function TeamSection() {
               </div>
 
               {/* FOOTER */}
-              <div className="flex justify-center gap-4 text-slate-400 mt-6 pt-6 border-t border-slate-100">
-                <button className="text-primary transition-colors">
+              <div className="flex justify-center gap-4 text-inverse-on-surface/80 mt-6 pt-6 border-t border-inverse-surface/20">
+                <button className="text-white transition-colors">
                   {member.role.includes("Engineer") ? (
                     <Cpu size={20} />
                   ) : (

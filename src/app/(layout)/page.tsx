@@ -20,7 +20,7 @@ export default function Home() {
       <StepsSection />
       <PartnersCarouselSection />
       <TeamSection />
-      <CourseSection />
+      {/* <CourseSection /> */}
       <ContactSection />
     </main>
   );

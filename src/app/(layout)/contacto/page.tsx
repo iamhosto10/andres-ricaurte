@@ -78,7 +78,7 @@ export default function ContactPage() {
 
             <motion.div variants={itemVariants} className="space-y-6 pt-6">
               <Link
-                href="mailto:andre.ricaurte@gmail.com?subject=Hola%20Andres&body=Hola%20Andres,%20quiero%20hablar%20contigo."
+                href="mailto:hola@andresricaurte.com?subject=Hola%20Andres&body=Hola%20Andres,%20quiero%20hablar%20contigo."
                 className="block"
               >
                 <div className="flex items-center gap-4 group cursor-pointer">
@@ -92,7 +92,7 @@ export default function ContactPage() {
                     </p>
 
                     <p className="text-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
-                      andre.ricaurte@gmail.com
+                      hola@andresricaurte.com
                     </p>
                   </div>
                 </div>
@@ -111,6 +111,27 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-bold text-on-surface/60 uppercase tracking-wider">
                       Instagram
+                    </p>
+
+                    <p className="text-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                      @soyandresricaurte
+                    </p>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/soyandresricaurte/"
+                target="_blank"
+                className="block"
+              >
+                <div className="flex items-center gap-4 group cursor-pointer">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface transition-colors duration-300">
+                    <MessageCircle className="w-6 h-6" />
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-bold text-on-surface/60 uppercase tracking-wider">
+                      Linkedin
                     </p>
 
                     <p className="text-lg font-semibold text-on-surface group-hover:text-primary transition-colors">

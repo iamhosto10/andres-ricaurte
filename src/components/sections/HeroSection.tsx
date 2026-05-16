@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <header className="relative pt-20 pb-20 md:pt-32 md:pb-32 overflow-hidden bg-surface max-w-full">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 gap-12 items-center">
         <motion.div
-          className="lg:col-span-6 z-10"
+          className="lg:col-span-5 xl:col-span-6 z-10"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -18,19 +18,60 @@ export default function HeroSection() {
               Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
             </span>
           </div>
-          <h1 className="text-5xl md:text-4xl lg:text-6xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight md:text-center lg:text-left">
-            <span className="text-primary">
-              Consultoría de Marketing e Inteligencia Artificial:{" "}
-            </span>{" "}
-            Creo Sistemas para Clínicas, Restaurantes y Negocios Digitales.
-          </h1>
-          <p className="text-lg md:text-xl text-secondary mb-10 max-w-xl leading-relaxed md:text-center lg:text-left mx-auto">
-            Transformamos la forma en que adquieres clientes. A través del
-            <strong> Método CRACS</strong>, automatizamos tus procesos de ventas
-            con Inteligencia Artificial sin perder tu esencia humana. El
-            resultado: escalas tu facturación de forma predecible, reduciendo el
-            tiempo de seguimiento y profesionalizando tus ventas.
-          </p>
+        </motion.div>
+
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <motion.div
+            className="lg:col-span-5 xl:col-span-6 z-10"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            {/* <div className="w-full justify-center flex lg:justify-start">
+              <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label ">
+                Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
+              </span>
+            </div> */}
+            <h1 className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight md:text-center lg:text-left">
+              <span className="text-primary">
+                Consultoría de Marketing e Inteligencia Artificial:{" "}
+              </span>{" "}
+              Creo Sistemas para Clínicas, Restaurantes y Negocios Digitales.
+            </h1>
+            <p className="text-lg md:text-xl  text-secondary mb-10 max-w-xl leading-relaxed md:text-center lg:text-left mx-auto">
+              Transformamos la forma en que adquieres clientes. A través del
+              <strong> Método CRACS</strong>, automatizamos tus procesos de
+              ventas con Inteligencia Artificial sin perder tu esencia humana.
+              El resultado: escalas tu facturación de forma predecible,
+              reduciendo el tiempo de seguimiento y profesionalizando tus
+              ventas.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className=" lg:col-span-7 xl:col-span-6 relative flex justify-center lg:h-full"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
+            <div className="relative w-full aspect-4/5 lg:aspect-auto xl:aspect-auto h-full max-w-full md:max-w-4/5 lg:max-w-full bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
+              <Image
+                alt="Andrés Ricaurte Profile"
+                fill
+                className="w-full h-full object-contain object-bottom"
+                src={"/Andres_Ricaurte_Consultor_Marketing.webp"}
+              />
+            </div>
+            {/* Decorative element */}
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+          </motion.div>
+        </div>
+        <motion.div
+          className="mt-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+        >
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="primary-gradient text-on-primary text-xl font-bold px-10 py-5 rounded-xl shadow-soft-xl hover:shadow-2xl transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
               Quiero mi ruta
@@ -59,24 +100,6 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-        </motion.div>
-
-        <motion.div
-          className=" lg:col-span-6 relative flex justify-center"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        >
-          <div className="relative w-full aspect-[4/5] md:max-w-4/5 max-w-full bg-white rounded-3xl overflow-hidden soft-shadow border border-slate-100">
-            <Image
-              alt="Andrés Ricaurte Profile"
-              fill
-              className="w-full h-full object-cover object-top"
-              src={"/Andres_Ricaurte_Consultor_Marketing.webp"}
-            />
-          </div>
-          {/* Decorative element */}
-          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl -z-10"></div>
         </motion.div>
       </div>
     </header>

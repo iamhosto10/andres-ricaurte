@@ -81,7 +81,7 @@ export default function ServicesSection() {
             Servicios
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
-            soluciones diseñadas para llevar tu facturación al siguiente nivel
+            Soluciones diseñadas para llevar tu facturación al siguiente nivel
             utilizando tecnología de punta.
           </p>
         </motion.div>
