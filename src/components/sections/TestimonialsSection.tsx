@@ -61,6 +61,7 @@ const partnerLogos = [
   { name: "Salvators", logoUrl: "/Salvators.webp" },
   { name: "Terranova", logoUrl: "/Terranova.webp" },
   { name: "UrbanaDomicilios", logoUrl: "/UrbanaDomicios.webp" },
+  { name: "SeñorBrocheta", logoUrl: "/señorbrocheta.webp" },
 ];
 
 export default function TestimonialsSection() {
@@ -176,7 +177,7 @@ export default function TestimonialsSection() {
               key={index}
               className=" transition-all duration-500 hover:scale-110"
             >
-              <div className="relative w-32 h-32 md:w-50 md:h-50">
+              <div className="relative w-32 h-32 md:w-38 md:h-38">
                 <Image
                   src={logo.logoUrl}
                   alt={logo.name}

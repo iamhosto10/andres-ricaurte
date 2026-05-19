@@ -33,7 +33,7 @@ export default function MethodSection() {
         >
           <h2 className="text-4xl font-extrabold text-inverse-on-surface mb-8 font-headline tracking-tight">
             ¿Quién está detrás del{" "}
-            <span className="text-primary">Método CRACS</span>?
+            <span className="text-primary">Método Mas Pro</span>?
           </h2>
           <div className="space-y-6 text-lg text-inverse-on-surface/80 leading-relaxed">
             <p>

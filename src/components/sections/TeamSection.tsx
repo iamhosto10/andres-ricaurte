@@ -61,7 +61,7 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group rounded-3xl p-8 border border-slate-100 soft-shadow hover:border-white transition-all duration-300 flex flex-col h-full bg-inverse-surface/60"
+              className="group rounded-3xl p-8 border border-slate-100 soft-shadow hover:border-primary transition-all duration-300 flex flex-col h-full bg-inverse-surface/60 bg-white "
             >
               {/* TOP CONTENT */}
               <div className="flex flex-col flex-grow">
@@ -82,15 +82,22 @@ export default function TeamSection() {
                 {/* TEXT */}
                 <div className="text-center flex flex-col flex-grow">
                   {/* NAME */}
-                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                  <div className="min-h-[40px]">
+                    <h3 className="text-xl font-bold mb-2 text-on-surface h-fit">
+                      {member.name}
+                    </h3>
+                  </div>
 
                   {/* ROLE */}
-                  <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 min-h-[40px]">
-                    {member.role}
-                  </p>
+                  <div className="min-h-[40px] w-full flex flex-col items-center">
+                    <p className="bg-primary font-semibold text-sm uppercase tracking-wider mb-4 h-fit w-fit">
+                      {member.role}
+                    </p>
+                  </div>
 
                   {/* DESCRIPTION */}
-                  <p className="text-inverse-on-surface/80 text-sm leading-relaxed mb-6 flex-grow min-h-18">
+
+                  <p className="text-sm leading-relaxed mb-6 flex-grow min-h-18 text-on-surface">
                     {member.description}
                   </p>
 
@@ -99,7 +106,7 @@ export default function TeamSection() {
                     {member.skills.map((skill, sIndex) => (
                       <span
                         key={sIndex}
-                        className="px-3 py-1 bg-surface/20 text-inverse-on-surface/80 text-xs font-medium rounded-full border border-inverse-surface/20 h-fit"
+                        className="px-3 py-1 bg-surface/20 text-on-surface/80 text-xs font-medium rounded-full border border-inverse-surface/20 h-fit"
                       >
                         {skill}
                       </span>
@@ -109,8 +116,8 @@ export default function TeamSection() {
               </div>
 
               {/* FOOTER */}
-              <div className="flex justify-center gap-4 text-inverse-on-surface/80 mt-6 pt-6 border-t border-inverse-surface/20">
-                <button className="text-white transition-colors">
+              <div className="flex justify-center gap-4 text-on-surface/80 mt-6 pt-6 border-t border-inverse-surface/20">
+                <button className="text-on-surface transition-colors">
                   {member.role.includes("Engineer") ? (
                     <Cpu size={20} />
                   ) : (
