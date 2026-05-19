@@ -32,7 +32,7 @@ export default function ProblemSection() {
               para hacer crecer tu negocio.
             </p>
 
-            <p className="font-medium text-primary">
+            <p className="text-white font-bold">
               La industria tradicional te ha hecho creer que necesitas perseguir
               “likes” y viralidad, pero mi enfoque es diferente: yo creo que
               debes optimizar para generar confianza y ventas reales, no ruido
