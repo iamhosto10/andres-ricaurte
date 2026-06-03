@@ -3,7 +3,6 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import { Globe, Cpu, ArrowRight } from "lucide-react";
-import Link from "next/link";
 
 const team = [
   {
@@ -33,9 +32,26 @@ const team = [
     skills: ["Storytelling", "Social Media", "Diseño", "Branding"],
     icon: Globe,
   },
+  {
+    name: "Carlos Ricaurte",
+    role: "Filmmaker & UGC Creator",
+    description:
+      "Especialista en producción audiovisual enfocada en contenido UGC que convierte. Combina narrativa visual, tendencias digitales y ejecución ágil para crear piezas auténticas que conectan y venden.",
+    image: "/CarlosRicaurte.webp",
+    skills: ["UGC", "Video", "Edición", "Storytelling"],
+    icon: Globe,
+  },
+  {
+    name: "Isaac Beleño",
+    role: "Drone Operator & Filmmaker",
+    description:
+      "Operador de drone certificado y filmmaker con enfoque cinematográfico. Captura tomas aéreas de alto impacto y las integra con storytelling visual para elevar la percepción de marca.",
+    image: "/Isaac.webp",
+    skills: ["Drone", "Cinematografía", "Video", "Producción"],
+    icon: Globe,
+  },
 ];
 
-// Variantes para las habilidades (Skills)
 const skillContainer: Variants = {
   hidden: { opacity: 0 },
   show: {
@@ -93,7 +109,6 @@ export default function NosotrosPage() {
         </div>
       </div>
 
-      {/* --- CINEMATIC ZIG-ZAG SECTION --- */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex flex-col gap-32 md:gap-48">
         {team.map((member, index) => {
           const isEven = index % 2 === 0;
@@ -105,7 +120,6 @@ export default function NosotrosPage() {
                 isEven ? "lg:flex-row" : "lg:flex-row-reverse"
               } items-center gap-10 lg:gap-0`}
             >
-              {/* COLUMNA IMAGEN */}
               <motion.div
                 initial={{ opacity: 0, x: isEven ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -124,7 +138,6 @@ export default function NosotrosPage() {
                 </div>
               </motion.div>
 
-              {/* COLUMNA TARJETA DE TEXTO (GLASSMORPHISM) */}
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

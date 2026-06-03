@@ -10,7 +10,7 @@ const team = [
     role: "CEO & Estratega de Negocios",
     description:
       "Especialista en escalabilidad empresarial y optimización de ventas con enfoque estratégico.",
-    image: "/AndresRicaurteTeams.jpeg",
+    image: "/AndresRicaurteTeams.webp",
     skills: ["Estrategia", "Ventas", "Liderazgo"],
   },
   {
@@ -28,6 +28,22 @@ const team = [
       "Creativa encargada de humanizar la marca y conectar con la audiencia a través de storytelling de impacto.",
     image: "/Luisa.webp",
     skills: ["Storytelling", "Social Media", "Diseño", "Branding"],
+  },
+  {
+    name: "Carlos Ricaurte",
+    role: "Filmmaker & UGC Creator",
+    description:
+      "Especialista en producción audiovisual enfocada en contenido UGC que convierte. Combina narrativa visual, tendencias digitales y ejecución ágil para crear piezas auténticas que conectan y venden.",
+    image: "/CarlosRicaurte.webp",
+    skills: ["UGC", "Video", "Edición", "Storytelling"],
+  },
+  {
+    name: "Isaac",
+    role: "Drone Operator & Filmmaker",
+    description:
+      "Operador de drone certificado y filmmaker con enfoque cinematográfico. Captura tomas aéreas de alto impacto y las integra con storytelling visual para elevar la percepción de marca.",
+    image: "/Isaac.webp",
+    skills: ["Drone", "Cinematografía", "Video", "Producción"],
   },
 ];
 
@@ -90,14 +106,14 @@ export default function TeamSection() {
 
                   {/* ROLE */}
                   <div className="min-h-[40px] w-full flex flex-col items-center">
-                    <p className="bg-primary font-semibold text-sm uppercase tracking-wider mb-4 h-fit w-fit">
+                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 h-fit w-fit">
                       {member.role}
                     </p>
                   </div>
 
                   {/* DESCRIPTION */}
 
-                  <p className="text-sm leading-relaxed mb-6 flex-grow min-h-18 text-on-surface">
+                  <p className="text-sm leading-relaxed mb-6 flex-grow min-h-30 text-on-surface">
                     {member.description}
                   </p>
 
