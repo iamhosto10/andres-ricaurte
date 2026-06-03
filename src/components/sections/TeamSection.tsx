@@ -38,7 +38,7 @@ const team = [
     skills: ["UGC", "Video", "Edición", "Storytelling"],
   },
   {
-    name: "Isaac",
+    name: "Isaac Beleño",
     role: "Drone Operator & Filmmaker",
     description:
       "Operador de drone certificado y filmmaker con enfoque cinematográfico. Captura tomas aéreas de alto impacto y las integra con storytelling visual para elevar la percepción de marca.",
