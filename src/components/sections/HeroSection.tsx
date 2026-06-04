@@ -54,7 +54,7 @@ export default function HeroSection() {
                 alt="Andrés Ricaurte Profile"
                 fill
                 className="w-full h-full object-contain object-bottom"
-                src={"/Andres_Ricaurte_Consultor_Marketing.webp"}
+                src={"/AndresRicaurteTeams.webp"}
               />
             </div>
             {/* Decorative element */}
