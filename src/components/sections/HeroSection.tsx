@@ -53,7 +53,7 @@ export default function HeroSection() {
               <Image
                 alt="Andrés Ricaurte Profile"
                 fill
-                className="w-full h-full object-contain object-bottom"
+                className="w-full h-full object-cover object-bottom"
                 src={"/AndresRicaurteTeams.webp"}
               />
             </div>
