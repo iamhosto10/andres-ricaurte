@@ -24,7 +24,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const phoneNumber = "573015998772";
+    const phoneNumber = "573012255826";
 
     const text = `¡Hola Andrés! \n\nMi nombre es ${formData.name}.\nMi correo es: ${formData.email}\nEstoy interesado/a en: *${formData.service}*\n\n${
       formData.message ? `Te escribo porque: ${formData.message}` : ""
