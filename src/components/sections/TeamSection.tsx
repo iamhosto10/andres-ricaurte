@@ -9,9 +9,16 @@ const team = [
     name: "Andrés Ricaurte",
     role: "CEO & BUSINESS MARKETING STRATEGIST",
     description:
-      "Especialista en escalabilidad empresarial y optimización de ventas con enfoque estratégico.",
+      "Consultor y Estratega en Marketing y ventas con IA, se enfoca en humanizar y escalar las marcas Como referentes es su sector.",
     image: "/AndresRicaurteTeams.webp",
-    skills: ["Estrategia", "Ventas", "Liderazgo"],
+    skills: [
+      "Marketing",
+      "Estrategia",
+      "Innovacion",
+      "Resultados",
+      "Ventas",
+      "IA",
+    ],
   },
   {
     name: "Gerardo Ramírez",
