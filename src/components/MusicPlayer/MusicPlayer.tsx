@@ -37,7 +37,7 @@ export default function AudioPlayer({ audioUrl }: { audioUrl: string }) {
     const ws = WaveSurfer.create({
       container: waveformRef.current,
       waveColor: "#9CA3AF",
-      progressColor: "#EAB308",
+      progressColor: "#ff0101",
       height: 60,
       barWidth: 3,
       cursorWidth: 0,
@@ -76,7 +76,7 @@ export default function AudioPlayer({ audioUrl }: { audioUrl: string }) {
       <Button
         size="icon"
         onClick={togglePlay}
-        className="bg-yellow-500 hover:bg-yellow-400 rounded-full p-4"
+        className="bg-primary hover:bg-primary/40 rounded-full p-4"
       >
         {isPlaying ? (
           <Pause className="text-white" />
@@ -106,7 +106,7 @@ export default function AudioPlayer({ audioUrl }: { audioUrl: string }) {
         </div>
         {mute ? (
           <VolumeOff
-            className="text-yellow-500 cursor-pointer"
+            className="text-primary cursor-pointer"
             size={28}
             onClick={() => {
               setMute(false);
@@ -116,7 +116,7 @@ export default function AudioPlayer({ audioUrl }: { audioUrl: string }) {
           />
         ) : (
           <Volume2
-            className="text-yellow-500 cursor-pointer"
+            className="text-primary cursor-pointer"
             size={28}
             onClick={() => {
               setMute(true);

@@ -110,7 +110,7 @@ export default function BlogArticle({ post }: { post: Blog }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12 bg-surface/50 backdrop-blur-md border border-primary/10 p-2 rounded-[2rem] shadow-soft-xl"
+            className="mb-12"
           >
             <AudioPlayer audioUrl={data?.audio?.asset.url} />
           </motion.div>
