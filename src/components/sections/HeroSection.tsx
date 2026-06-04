@@ -27,11 +27,6 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {/* <div className="w-full justify-center flex lg:justify-start">
-              <span className="inline-block bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold mb-6 uppercase tracking-widest font-label ">
-                Andrés Ricaurte | ESTRATEGIA - INNOVACIÓN - RESULTADOS
-              </span>
-            </div> */}
             <h1 className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-on-surface leading-[1.05] mb-8 font-headline tracking-tight md:text-center lg:text-left">
               <span className="text-primary">
                 Consultoría de Marketing e Inteligencia Artificial:{" "}
@@ -40,7 +35,7 @@ export default function HeroSection() {
             </h1>
             <p className="text-lg md:text-xl  text-secondary mb-10 max-w-xl leading-relaxed md:text-center lg:text-left mx-auto">
               Transformamos la forma en que adquieres clientes. A través del
-              <strong> Método CRACS</strong>, automatizamos tus procesos de
+              <strong> Método MASpro</strong>, automatizamos tus procesos de
               ventas con Inteligencia Artificial sin perder tu esencia humana.
               El resultado: escalas tu facturación de forma predecible,
               reduciendo el tiempo de seguimiento y profesionalizando tus

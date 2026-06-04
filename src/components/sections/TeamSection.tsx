@@ -7,7 +7,7 @@ import { Globe, Cpu } from "lucide-react";
 const team = [
   {
     name: "Andrés Ricaurte",
-    role: "CEO & Estratega de Negocios",
+    role: "CEO & BUSINESS MARKETING STRATEGIST",
     description:
       "Especialista en escalabilidad empresarial y optimización de ventas con enfoque estratégico.",
     image: "/AndresRicaurteTeams.webp",
@@ -15,7 +15,7 @@ const team = [
   },
   {
     name: "Gerardo Ramírez",
-    role: "Fullstack & Mobile Engineer",
+    role: "FULLSTACK & MOBILE ENGINEER",
     description:
       "Ingeniero experto en integrar Inteligencia Artificial y desarrollar arquitecturas web/móviles de alto rendimiento.",
     image: "/Gerardo.webp",
@@ -23,7 +23,7 @@ const team = [
   },
   {
     name: "Luisa Vargas",
-    role: "Content Creator & Branding",
+    role: "CONTENT CREATOR & BRANDING SPECIALIST",
     description:
       "Creativa encargada de humanizar la marca y conectar con la audiencia a través de storytelling de impacto.",
     image: "/Luisa.webp",
@@ -31,7 +31,7 @@ const team = [
   },
   {
     name: "Carlos Ricaurte",
-    role: "Filmmaker & UGC Creator",
+    role: "FILMMAKER & UGC CREATOR",
     description:
       "Especialista en producción audiovisual enfocada en contenido UGC que convierte. Combina narrativa visual, tendencias digitales y ejecución ágil para crear piezas auténticas que conectan y venden.",
     image: "/CarlosRicaurte.webp",
@@ -39,11 +39,19 @@ const team = [
   },
   {
     name: "Isaac Beleño",
-    role: "Drone Operator & Filmmaker",
+    role: "DRONE OPERATOR & FILMMAKER",
     description:
       "Operador de drone certificado y filmmaker con enfoque cinematográfico. Captura tomas aéreas de alto impacto y las integra con storytelling visual para elevar la percepción de marca.",
     image: "/Isaac.webp",
     skills: ["Drone", "Cinematografía", "Video", "Producción"],
+  },
+  {
+    name: "Valentina Bolaños",
+    role: "STRATEGIC OPERATIONS COORDINATOR",
+    description:
+      "Especialista en optimización de procesos y estrategia operativa que maximiza la eficiencia. Combina analisis de datos, integracion de equipos y ejecucion agil para impulsar resultados sostenibles y escalables.",
+    image: "/ValentinaBolaños.webp",
+    skills: ["Optimización", "Estrategia", "Gestion", "Datos"],
   },
 ];
 
@@ -77,7 +85,7 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="group rounded-3xl p-8 border border-slate-100 soft-shadow hover:border-primary transition-all duration-300 flex flex-col h-full bg-inverse-surface/60 bg-white "
+              className="group rounded-3xl p-8 border border-slate-100 soft-shadow hover:border-primary transition-all duration-300 flex flex-col h-full bg-inverse-surface/60 bg-white cursor-pointer"
             >
               {/* TOP CONTENT */}
               <div className="flex flex-col flex-grow">

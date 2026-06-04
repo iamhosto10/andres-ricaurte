@@ -7,16 +7,16 @@ import { Globe, Cpu, ArrowRight } from "lucide-react";
 const team = [
   {
     name: "Andrés Ricaurte",
-    role: "CEO & Estratega de Negocios",
+    role: "CEO & BUSINESS MARKETING STRATEGIST",
     description:
-      "Especialista en escalabilidad empresarial y optimización de ventas con enfoque estratégico. Lidero la visión del Método CRACS para que factures predeciblemente sin sacrificar tu tiempo.",
+      "Consultor y estratega de marketing Con IA. Transformo procesos manuales en sistema de ventas automatizados Que escalan tu facturación. Humanizamos tu marca y te posicionamos como referente en tu sector Más clientes, más tiempo libre y más resultados medibles. Simple. Yo construyo. Tú cobras.",
     image: "/AndresRicaurteTeams.webp",
     skills: ["Estrategia", "Ventas", "Liderazgo", "Negocios"],
     icon: Globe,
   },
   {
     name: "Gerardo Andrés Ramírez",
-    role: "Fullstack & Mobile Engineer",
+    role: "FULLSTACK & MOBILE ENGINEER",
     description:
       "Ingeniero experto en integrar Inteligencia Artificial y desarrollar arquitecturas web/móviles de alto rendimiento. Convierto las estrategias de marketing en sistemas tecnológicos escalables que trabajan 24/7.",
     image: "/Gerardo.webp",
@@ -25,7 +25,7 @@ const team = [
   },
   {
     name: "Luisa Vargas",
-    role: "Content Creator & Branding",
+    role: "CONTENT CREATOR & BRANDING SPECIALIST",
     description:
       "Creativa encargada de humanizar la marca y conectar con la audiencia a través de storytelling de impacto. Diseño la identidad visual que hace que tu negocio no pase desapercibido en el mundo digital.",
     image: "/Luisa.webp",
@@ -34,7 +34,7 @@ const team = [
   },
   {
     name: "Carlos Ricaurte",
-    role: "Filmmaker & UGC Creator",
+    role: "FILMMAKER & UGC CREATOR",
     description:
       "Especialista en producción audiovisual enfocada en contenido UGC que convierte. Combina narrativa visual, tendencias digitales y ejecución ágil para crear piezas auténticas que conectan y venden.",
     image: "/CarlosRicaurte.webp",
@@ -43,11 +43,20 @@ const team = [
   },
   {
     name: "Isaac Beleño",
-    role: "Drone Operator & Filmmaker",
+    role: "DRONE OPERATOR & FILMMAKER",
     description:
       "Operador de drone certificado y filmmaker con enfoque cinematográfico. Captura tomas aéreas de alto impacto y las integra con storytelling visual para elevar la percepción de marca.",
     image: "/Isaac.webp",
     skills: ["Drone", "Cinematografía", "Video", "Producción"],
+    icon: Globe,
+  },
+  {
+    name: "Valentina Bolaños",
+    role: "STRATEGIC OPERATIONS COORDINATOR",
+    description:
+      "Especialista en optimización de procesos y estrategia operativa que maximiza la eficiencia. Combina analisis de datos, integracion de equipos y ejecucion agil para impulsar resultados sostenibles y escalables.",
+    image: "/ValentinaBolaños.webp",
+    skills: ["Optimización", "Estrategia", "Gestion", "Datos"],
     icon: Globe,
   },
 ];
@@ -174,7 +183,7 @@ export default function NosotrosPage() {
                       <motion.span
                         key={skill}
                         variants={skillItem}
-                        className="px-4 py-2 bg-on-surface/5 text-on-surface font-semibold text-sm rounded-xl border border-on-surface/10 hover:bg-primary/10 hover:text-primary hover:border-primary/20 transition-colors"
+                        className="px-4 py-2 bg-on-surface/5 text-on-surface font-semibold text-sm rounded-xl border border-on-surface/10 hover:bg-primary/10 hover:text-primary hover:border-primary/20 transition-colors cursor-pointer"
                       >
                         {skill}
                       </motion.span>

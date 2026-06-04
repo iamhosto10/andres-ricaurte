@@ -208,12 +208,20 @@ export default function ContactPage() {
                   onChange={handleChange}
                   className="w-full px-5 py-4 rounded-xl bg-on-surface/5 border border-on-surface/10 focus:border-primary/50 focus:bg-surface focus:ring-4 focus:ring-primary/10 transition-all outline-none text-on-surface font-medium cursor-pointer"
                 >
-                  <option value="Método CRACS">Método CRACS</option>
-                  <option value="Método MASPro">Método MASPro</option>
-                  <option value="Consultoría 1a1">
-                    Consultoría Privada 1a1
-                  </option>
                   <option value="Conferencias/Charlas">Conferencias</option>
+                  <option value="Sistema de Ventas con IA">
+                    Sistema de Ventas con IA
+                  </option>
+                  <option value="Consultoría Estratégica 1:1">
+                    Consultoría Estratégica 1:1
+                  </option>
+                  <option value="Reputación Digital (SEO & IA)">
+                    Reputación Digital (SEO & IA)
+                  </option>
+                  <option value="WhatsApp Marketing">WhatsApp Marketing</option>
+                  <option value="Gestión de Redes Sociales & Ads">
+                    Gestión de Redes Sociales & Ads
+                  </option>
                 </select>
               </div>
 

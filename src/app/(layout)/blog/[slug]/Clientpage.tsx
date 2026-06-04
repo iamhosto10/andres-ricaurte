@@ -86,7 +86,7 @@ export default function BlogArticle({ post }: { post: Blog }) {
             {data?.mainImage && (
               <motion.div
                 variants={imageZoomVariants}
-                className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-[2rem] shadow-2xl border border-primary/10"
+                className="relative w-full aspect-[16/9] overflow-hidden rounded-[2rem] shadow-2xl border border-primary/10"
               >
                 <img
                   src={urlFor(data.mainImage).url()}
