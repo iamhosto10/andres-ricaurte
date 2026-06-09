@@ -20,14 +20,6 @@ export default function AudioPlayer({ audioUrl }: { audioUrl: string }) {
   const [mute, setMute] = useState(false);
 
   useEffect(() => {
-    if (volume == 0) {
-      setMute(true);
-    } else {
-      setMute(false);
-    }
-  }, [volume]);
-
-  useEffect(() => {
     if (!waveformRef.current || !audioUrl) return;
 
     // Destruir instancia previa
@@ -65,6 +57,7 @@ export default function AudioPlayer({ audioUrl }: { audioUrl: string }) {
   const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newVolume = Number(e.target.value);
     setVolume(newVolume);
+    setMute(newVolume === 0);
     wavesurfer.current?.setVolume(newVolume);
   };
 

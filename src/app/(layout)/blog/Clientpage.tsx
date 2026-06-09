@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { urlFor } from "@/lib/sanity";
+import { SanityPost } from "@/types";
 
 const staggerContainer: Variants = {
   hidden: { opacity: 0 },
@@ -23,7 +24,7 @@ const fadeUpVariants: Variants = {
   },
 };
 
-export default function ClientBlogPage({ posts }: { posts: any[] }) {
+export default function ClientBlogPage({ posts }: { posts: SanityPost[] }) {
   return (
     <div className="min-h-screen bg-surface overflow-hidden pt-32 pb-32">
       {/* Hero Section */}

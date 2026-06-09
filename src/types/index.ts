@@ -11,6 +11,27 @@ export interface Service {
   description: string;
 }
 
+export interface SanityImage {
+  asset: {
+    _ref: string;
+    _type: string;
+  };
+}
+
+export interface SanityPost {
+  _id?: string;
+  title?: string;
+  focusTitle?: string;
+  continueTitle?: string;
+  slug?: {
+    current: string;
+  };
+  mainImage?: SanityImage;
+  publishedAt?: string;
+  excerpt?: string;
+  body?: unknown;
+}
+
 export interface Course {
   title: string;
   category: string;

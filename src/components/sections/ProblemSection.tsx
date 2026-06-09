@@ -74,8 +74,8 @@ export default function ProblemSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="pt-6 text-xl md:text-2xl font-bold border-t border-primary/20 italic"
             >
-              "Si tu negocio depende de que tú seas el motor de ventas, estás
-              dejando mucho dinero en el camino."
+              &quot;Si tu negocio depende de que tú seas el motor de ventas, estás
+              dejando mucho dinero en el camino.&quot;
             </motion.p>
           </motion.div>
         </div>
